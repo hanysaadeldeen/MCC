@@ -1,6 +1,6 @@
 <template>
     <section class="BrandSection bg-[#E9F1FC]">
-        <Vue3Marquee duration="100">
+        <Vue3Marquee duration="100" :direction="locale === 'ar' ? 'reverse' : ''">
             <img v-for="brand in Brands" :src="brand.img" :alt="brand.alt" :key="brand.id" class="mx-3" width="164"
                 height="68" />
         </Vue3Marquee>
@@ -8,6 +8,7 @@
 </template>
 
 <script setup lang="ts">
+const { locale } = useI18n()
 
 import AFICO from "../../assets/img/Utils/Brands/AFICO.svg"
 import AGM from "../../assets/img/Utils/Brands/AGM.svg"

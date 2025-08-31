@@ -5,8 +5,8 @@
             <div class="relative z-40">
                 <div class="flex items-center justify-between ">
                     <nuxt-link :to="localePath('index')" class="block relative ">
-                        <img src="~/assets/img/Utils/Logo.svg" class="h-[50px]  xl:h-[70px] relative " alt="د.محمد عجاج"
-                            height="70px" loading="eager" fetchpriority="high" />
+                        <img src="~/assets/img/Utils/Logo.svg" class="h-[50px]  xl:h-[70px] relative " alt="Mcc"
+                            height="70px" width="306" loading="eager" fetchpriority="high" />
                     </nuxt-link>
                     <div class="flex items-center justify-between gap-6">
                         <nav class="relative hidden lg:block h-full ">
@@ -36,7 +36,6 @@
                                         فئات المنتجات
                                     </nuxt-link>
                                 </li>
-
                             </ul>
                         </nav>
                         <div class="hidden  justify-between  lg:flex items-center gap-2 xl:gap-6">
@@ -51,7 +50,6 @@
                         <i class="fa-solid fa-xmark text-white" :class="{ hidden: !isSideBar }"
                             @click="toggleSidebar" />
                     </div>
-
                 </div>
             </div>
             <transition :name="transitionName">
@@ -119,11 +117,9 @@
                                 </li>
                             </ul>
                         </nav>
-                        <div class="mt-5 flex flex-col items-start justify-between gap-10">
-                            <LanguageSwitcher />
-                        </div>
-                        <div class="mt-5 justify-between gap-10">
-                            <nuxt-link :to="localePath('contact')">
+                        <div class="mt-5 justify-between flex-col ">
+                            <LanguageSwitcher isWhite />
+                            <nuxt-link :to="localePath('contact')" class="mt-6 relative block">
                                 <Button title="تواصل معنا" />
                             </nuxt-link>
                         </div>
@@ -191,21 +187,9 @@ const adjustedPath = computed(() => getPathWithoutLocale(route.path));
 </script>
 
 <style scoped>
-header {
-    background-color: black;
-}
-
-header.home {
-    background-color: rgba(255, 255, 255, 0.12);
-    backdrop-filter: blur(40px);
-    -webkit-backdrop-filter: blur(40px);
-}
-
 a {
     text-decoration: none;
 }
-
-/*   */
 
 
 ul li {
@@ -223,6 +207,7 @@ ul li {
     text-align: center;
     border-bottom: 2px solid transparent;
 }
+
 
 @media (min-width:1024px) and (max-width: 1280px) {
     ul li {
@@ -255,8 +240,13 @@ ul li.active {
     will-change: transform;
 }
 
-.sideBar nav ul li:hover {
-    border: 1px solid #F4B300;
+.sideBar nav ul li {
+    border-bottom: 2px solid transparent;
+}
+
+.sideBar nav ul li:hover,
+.sideBar nav ul li.active {
+    border-bottom: 2px solid #F4B300;
 }
 
 .sidebar-en-enter-active,

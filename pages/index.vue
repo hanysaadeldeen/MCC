@@ -4,10 +4,11 @@
     <HomeHookSection />
     <HomeBrandsSection />
     <HomeOurNumbersSection />
+    <HomeClientsSection />
+    <HomeProductsSection />
+    <HomeCTASection />
   </main>
 </template>
 
-
 <script setup>
-const { locales, setLocale } = useI18n();
 </script>

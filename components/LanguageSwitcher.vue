@@ -1,7 +1,8 @@
 <template>
   <div class="language-switcher">
     <button @click="switchLanguage"
-      class="text-primary hover:text-PrimaryPL3 flex items-center gap-2 transition-all duration-300  ease-in-out">
+      class=" hover:text-PrimaryPL3 flex items-center gap-2 transition-all duration-300  ease-in-out"
+      :class="isWhite ? 'text-white px-6' : 'text-primary'">
       <span class="text-base font-normal">
         {{
           currentLocale === "en" ? "AR" : "EN"
@@ -14,7 +15,15 @@
 
 <script setup>
 const { locale, setLocale } = useI18n();
+const props = defineProps({
+  isWhite: {
+    type: Boolean,
+    default: false
+  }
+})
+
 const currentLocale = ref(locale.value);
+
 
 const switchLanguage = async () => {
   const newLocale = currentLocale.value === "en" ? "ar" : "en";
