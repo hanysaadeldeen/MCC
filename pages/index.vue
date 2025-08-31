@@ -2,6 +2,8 @@
   <main>
     <HomeHeroSection />
     <HomeHookSection />
+    <HomeBrandsSection />
+    <HomeOurNumbersSection />
   </main>
 </template>
 

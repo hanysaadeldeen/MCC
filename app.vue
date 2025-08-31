@@ -15,7 +15,7 @@ const { locale } = useI18n();
 const setDirection = () => {
   const direction = locale.value === "en" ? "ltr" : "rtl";
   if (typeof document !== "undefined") {
-    document.documentElement.setAttribute("dir", direction);
+    // document.documentElement.setAttribute("dir", direction);
     document.documentElement.setAttribute("lang", locale.value);
   }
 };
