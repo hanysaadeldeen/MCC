@@ -1,5 +1,5 @@
 <template>
-    <section class="HeroSection bg-[#E9F1FC] py-28 md:py-[184px] px-4 lg:px-24 relative">
+    <section class="HeroSection bg-[#E9F1FC] py-28 md:py-[184px] px-6 relative">
         <div class="max-w-[1392px] mx-auto  flex justify-between items-center gap-6 lg:gap-10 max-md:flex-col">
             <h1
                 class="font-bold  text-3xl md:text-4xl xl:text-6xl xl:!leading-[90px] max-md:text-center max-md:mx-auto md:max-w-[600px]">

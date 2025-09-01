@@ -1,5 +1,5 @@
 <template>
-    <section class="OurtNumberSection max-w-[1168px] mx-auto" :dir="locale === 'ar' ? 'rtl' : 'ltr'">
+    <section class="OurtNumberSection max-w-[1168px] mx-auto max-xl:px-6" :dir="locale === 'ar' ? 'rtl' : 'ltr'">
 
         <TitleSection title="أرقام حققناها" />
         <div class="flex items-center relative justify-center max-md:flex-wrap gap-6">
@@ -13,7 +13,7 @@
                     <div class="text-center">
                         <h2 class="text-Text font-bold text-3xl md:text-4xl lg:text-6xl mb-2 lg:!leading-[72px]">+5000
                         </h2>
-                        <p class="text-[#4F5A69] text-base md:text-lg font-bold ">مشروع منفذ</p>
+                        <p class="text-paragraph text-base md:text-lg font-bold ">مشروع منفذ</p>
                     </div>
                 </div>
             </div>
@@ -29,7 +29,7 @@
                         <h2 class="text-Text font-bold text-3xl md:text-4xl lg:text-6xl mb-2 lg:!leading-[72px]">
                             +1000
                         </h2>
-                        <p class="text-[#4F5A69] text-base md:text-lg font-bold ">عميل راضي</p>
+                        <p class="text-paragraph text-base md:text-lg font-bold ">عميل راضي</p>
                     </div>
                 </div>
                 <div class="max-md:hidden absolute left-0 top-1/2 -translate-y-1/2 bg-[#666666] w-[0.5px] h-[100px]">
@@ -43,7 +43,7 @@
                         <h2 class="text-Text font-bold text-3xl md:text-4xl lg:text-6xl mb-2 lg:!leading-[72px]">
                             1+ مليار
                         </h2>
-                        <p class="text-[#4F5A69] text-base md:text-lg font-bold ">منتج مورد</p>
+                        <p class="text-paragraph text-base md:text-lg font-bold ">منتج مورد</p>
                     </div>
                 </div>
             </div>

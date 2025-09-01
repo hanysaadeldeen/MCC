@@ -12,7 +12,7 @@
                     <h1 class=" text-3xl md:text-4xl xl:text-6xl xl:!leading-[90px] font-bold mb-4">
                         شريكك الموثوق في عالم التوريدات
                     </h1>
-                    <p class="text-lg font-medium text-[#4F5A69] max-w-[379px] max-xl:mx-auto mb-6">نورد مواد عالية
+                    <p class="text-lg font-medium text-paragraph max-w-[379px] max-xl:mx-auto mb-6">نورد مواد عالية
                         الجودة
                         لمشاريعك،
                         بخبرة

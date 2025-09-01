@@ -5,8 +5,8 @@
             <div class="relative z-40">
                 <div class="flex items-center justify-between ">
                     <nuxt-link :to="localePath('index')" class="block relative ">
-                        <img src="~/assets/img/Utils/Logo.svg" class="h-[50px] max-md:w-fit  xl:h-[70px] relative "
-                            alt="Mcc" height="70px" width="290" loading="eager" fetchpriority="high" />
+                        <img src="~/assets/img/Utils/Logo.svg" class="h-[50px] w-fit  xl:h-[70px] relative " alt="Mcc"
+                            height="70px" width="290" loading="eager" fetchpriority="high" />
                     </nuxt-link>
                     <div class="flex items-center justify-between gap-6">
                         <nav class="relative hidden lg:block h-full ">
@@ -16,13 +16,13 @@
                                         الرئيسية
                                     </nuxt-link>
                                 </li>
-                                <li :class="adjustedPath === '/aboutUs' ? 'active' : ''" class=" ">
-                                    <nuxt-link :to="localePath('aboutUs')">
+                                <li :class="adjustedPath === '/company' ? 'active' : ''" class=" ">
+                                    <nuxt-link :to="localePath('company')">
                                         الشركة
                                     </nuxt-link>
                                 </li>
-                                <li :class="adjustedPath === '/aboutUs' ? 'active' : ''" class=" ">
-                                    <nuxt-link :to="localePath('aboutUs')">
+                                <li :class="adjustedPath === '/clients' ? 'active' : ''" class=" ">
+                                    <nuxt-link :to="localePath('clients')">
                                         العملاء والمشاريع
                                     </nuxt-link>
                                 </li>
@@ -74,18 +74,20 @@
                                     </nuxt-link>
                                 </li>
                                 <li :class="[
-                                    adjustedPath === '/about' ? 'active' : '',
+                                    adjustedPath === '/company' ? 'active' : '',
                                     'text-white hover:text-PrimaryPL3',
                                 ]">
-                                    <nuxt-link :to="localePath('about')" @click="isSideBar = !isSideBar" class="w-full">
+                                    <nuxt-link :to="localePath('company')" @click="isSideBar = !isSideBar"
+                                        class="w-full">
                                         الشركة
                                     </nuxt-link>
                                 </li>
                                 <li :class="[
-                                    adjustedPath === '/about' ? 'active' : '',
+                                    adjustedPath === '/clients' ? 'active' : '',
                                     'text-white hover:text-PrimaryPL3',
                                 ]">
-                                    <nuxt-link :to="localePath('about')" @click="isSideBar = !isSideBar" class="w-full">
+                                    <nuxt-link :to="localePath('clients')" @click="isSideBar = !isSideBar"
+                                        class="w-full">
                                         العملاء والمشاريع
                                     </nuxt-link>
                                 </li>

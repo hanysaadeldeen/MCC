@@ -15,6 +15,7 @@ export default {
         secondary: "#F4B300",
         secondaryT: "#D9A600",
         Text: "#0B2547",
+        paragraph: "#4F5A69",
       },
     },
   },

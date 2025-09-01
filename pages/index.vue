@@ -3,7 +3,7 @@
     <HomeHeroSection />
     <HomeHookSection />
     <HomeBrandsSection />
-    <HomeOurNumbersSection />
+    <OurNumbersSection />
     <HomeClientsSection />
     <HomeProductsSection />
     <CTASection title="  كن شريكًا لـ MCC:

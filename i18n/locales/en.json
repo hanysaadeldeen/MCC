@@ -21,5 +21,120 @@
     "COMPONENT81": "FLOAT VALVES",
     "MECHANICALR": "MECHANICAL & REPAIR COUPLING",
     "WATERFOUNTAINS": " WATER FOUNTAIN COOLERS, SINKS"
+  },
+  "privacy": {
+    "heroSection": {
+      "title": "Privacy Policy  HealthyGo369",
+      "description": "At HealthyGo369, we respect your privacy and are committed to protecting the personal information you share with us. This policy explains how we collect, use, and protect the data you provide through our website."
+    },
+    "CTA": {
+      "title": "You Care About The Details — Now Your Next Step Is Up To You.",
+      "buttonOne": "Return To Homepage",
+      "buttonTwo": "Explore Our Solutions"
+    },
+    "sectionOne": {
+      "title": "1. Information We Collect",
+      "description": "When you fill out a subscription form or contact us, we may ask you to provide personal information such as:",
+      "data": {
+        "itemOne": "Full Name",
+        "itemTwo": "Phone Number",
+        "itemThree": "Email"
+      }
+    },
+    "sectionTwo": {
+      "title": "2. How We Use Your Information",
+      "description": "We use the information we collect for the following purposes:",
+      "data": {
+        "itemOne": "To Contact You: We use your name and phone number to contact you regarding your subscription inquiry, explain service details, and finalize the subscription process for our healthy meal delivery service.",
+        "itemTwo": "To Provide Our Services: After subscription, we may use your information to manage your account, deliver orders, and provide necessary support."
+      }
+    },
+    "sectionThree": {
+      "title": "3. Information Sharing",
+      "description": "We do not sell, trade, or rent your personal information to third parties. We may share your information only in the following limited circumstances:",
+      "data": {
+        "itemOne": "Service Providers: We may work with third-party companies or individuals to perform services on our behalf, such as website hosting, data analysis, or communication services. These parties are granted access to your personal information only to the extent necessary to perform their functions and are obligated not to disclose or use it for any other purpose.",
+        "itemTwo": "Legal Requirements: We may disclose your personal information if required by law or in response to valid court orders, to comply with a legal process, or to protect our rights, property, or the safety of our users."
+      }
+    },
+    "sectionFour": {
+      "title": "4. Cookies",
+      "description": "Our website uses cookies to enhance your experience. Cookies are small text files stored on your computer or mobile device when you visit a website. We use them for the following purposes:",
+      "data": {
+        "itemOne": "Website Functionality: To ensure the website works correctly and remembers your preferences.",
+        "itemTwo": "Website Analytics: To gather information about how visitors use our website (e.g., most visited pages) with the aim of improving site performance and content. You can control cookies through your browser settings. Disabling cookies may affect certain functionalities of the website."
+      }
+    },
+    "sectionFive": {
+      "title": "5. Protecting Your Information",
+      "description": "We implement reasonable security measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction. However, no data transmission over the internet or electronic storage method is 100% secure. Therefore, we cannot guarantee its absolute security."
+    },
+    "sectionSix": {
+      "title": "6. Your Rights",
+      "description": "You have the right to:",
+      "data": {
+        "itemOne": "Access Your Information: Request a copy of the personal information we hold about you.",
+        "itemTwo": "Correct Your Information: Request the correction of any inaccurate or incomplete information."
+      }
+    },
+    "sectionSeven": {
+      "title": "7. Changes to This Privacy Policy",
+      "description": "We may update this Privacy Policy from time to time. Any changes will be posted on this page, and the Effective Date at the top will be updated. You are advised to review this Privacy Policy periodically for any changes. Your continued use of the website after changes are posted constitutes your acceptance of those changes."
+    },
+    "sectionEight": {
+      "title": "8. Contact Us",
+      "description": "If you have any questions or concerns about this Privacy Policy, please contact us via:",
+      "data": {
+        "itemOne": "Phone Number: +966 54757985"
+      }
+    }
+  },
+  "terms": {
+    "heroSection": {
+      "title": "Terms and Conditions HealthyGo369  ",
+      "description": "Welcome to HealthyGo369. Please read the following terms and conditions carefully before using our website or any of our services."
+    },
+    "sectionOne": {
+      "title": "1. Acceptance of Terms",
+      "description": "By accessing or using HealthyGo369 and its services, you signify your unreserved acceptance of and agreement to be bound by these Terms and Conditions, as well as our Privacy Policy. If you do not agree to all the terms and conditions of this agreement, then you may not access the website or use any services. Your continued use of the website following the posting of changes to these terms will mean you accept those changes."
+    },
+    "sectionTwo": {
+      "title": "2. Services Provided",
+      "description": "This section outlines the services offered by HealthyGo369 through the Website:",
+      "data": {
+        "itemOne": "Healthy Meal Delivery Service: We provide a service for preparing and delivering healthy meals based on pre-defined subscription plans.",
+        "itemTwo": "Subscription Plans: The Website displays various meal plans (e.g., weekly, monthly, specific dietary needs). These plans, including their content and pricing, are subject to change without prior notice."
+      }
+    },
+    "sectionThree": {
+      "title": "3. Intellectual Property",
+      "description": "The Website and its original content (excluding user-submitted content), features, and functionality are and will remain the exclusive property of HealthyGo369 and its licensors. The Website is protected by copyright, trademark, and other intellectual property laws of [The country where your company operates] and international treaties. Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of HealthyGo369."
+    },
+    "sectionFour": {
+      "title": "4. Use of the Website",
+      "description": "Permitted Use: The Website is intended for personal and non-commercial use, specifically for viewing meal menus, understanding subscription plans, and submitting inquiries for our services.",
+      "data": {
+        "itemOne": "Attempting to interfere with the proper working of the Website.",
+        "itemTwo": "Gaining unauthorized access to any part of the Website or its related systems.",
+        "itemThree": "Transmitting any unlawful, harmful, threatening, abusive, harassing, defamatory, vulgar, obscene, or otherwise objectionable material.",
+        "itemFour": "Using the Website to transmit unsolicited advertisements or spam."
+      }
+    },
+    "sectionFive": {
+      "title": "5. Limitation of Liability",
+      "description": "To the maximum extent permitted by applicable law, in no event shall HealthyGo369, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from (i) your access to or use of or inability to access or use the Website/Service; (ii) any conduct or content of any third party on the Website/Service; (iii) any content obtained from the Website/Service; and (iv) unauthorized access, use or alteration of your transmissions or content, whether based on warranty, contract, tort (including negligence) or any other legal theory, whether or not we have been informed of the possibility of such damage, and even if a remedy set forth herein is found to have failed of its essential purpose. "
+    },
+    "sectionSix": {
+      "title": "6. Privacy",
+      "description": "Your use of the Website is also governed by our Privacy Policy, which is incorporated into these Terms by this reference. The Privacy Policy explains how we collect, use, and disclose information from you. Please review our full Privacy Policy at [Link to your Privacy Policy page] to understand our practices regarding your personal data. By using the Website, you consent to the data practices described in the Privacy Policy. "
+    },
+    "sectionSeven": {
+      "title": "7. Changes to This Policy",
+      "description": "We reserve the right to modify this policy at any time. Any updates will be posted on this page with a revised date."
+    },
+    "sectionEight": {
+      "title": "8. Payment and Refunds",
+      "description": "Payment Terms: All prices for subscription plans will be communicated to you during the personalized contact process after your inquiry. Payments must be made in full according to the agreed-upon schedule."
+    }
   }
 }
