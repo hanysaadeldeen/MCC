@@ -36,10 +36,10 @@
                             </nuxt-link>
                         </li>
                         <li class=" " :class="adjustedPath === '/clients' ? 'active' : ''">
-                            <nuxt-link :to="localePath('/clients')">
-                                العملاء
-                                والمشاريع
-                            </nuxt-link>
+                            <!-- <nuxt-link :to="localePath('/clients')"> -->
+                            العملاء
+                            والمشاريع
+                            <!-- </nuxt-link> -->
                         </li>
                         <li class=" " :class="adjustedPath === '/company' ? 'active' : ''">
                             <nuxt-link :to="localePath('/company')">
@@ -58,9 +58,9 @@
                 <nav>
                     <ul>
                         <li class="pt-0 " :class="adjustedPath === '/contactUs' ? 'active' : ''">
-                            <nuxt-link :to="localePath('/contactUs')">
-                                تواصل معنا
-                            </nuxt-link>
+                            <!-- <nuxt-link :to="localePath('/contactUs')"> -->
+                            تواصل معنا
+                            <!-- </nuxt-link> -->
                         </li>
                         <li class=" " :class="adjustedPath === '/privacy' ? 'active' : ''">
                             <nuxt-link :to="localePath('/privacy')">

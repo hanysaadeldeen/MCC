@@ -22,9 +22,9 @@
                                     </nuxt-link>
                                 </li>
                                 <li :class="adjustedPath === '/clients' ? 'active' : ''" class=" ">
-                                    <nuxt-link :to="localePath('clients')">
-                                        العملاء والمشاريع
-                                    </nuxt-link>
+                                    <!-- <nuxt-link :to="localePath('clients')"> -->
+                                    العملاء والمشاريع
+                                    <!-- </nuxt-link> -->
                                 </li>
                                 <li :class="adjustedPath === '/suppliers' ? 'active' : ''" class=" ">
                                     <nuxt-link :to="localePath('suppliers')">
@@ -40,9 +40,9 @@
                         </nav>
                         <div class="hidden  justify-between  lg:flex items-center gap-2 xl:gap-6">
                             <LanguageSwitcher />
-                            <nuxt-link :to="localePath('contact')">
-                                <Button title="تواصل معنا" />
-                            </nuxt-link>
+                            <!-- <nuxt-link :to="localePath('contact')"> -->
+                            <Button title="تواصل معنا" />
+                            <!-- </nuxt-link> -->
                         </div>
                     </div>
                     <div class="lg:hidden text-2xl cursor-pointer sm:text-3xl">
@@ -86,10 +86,10 @@
                                     adjustedPath === '/clients' ? 'active' : '',
                                     'text-white hover:text-PrimaryPL3',
                                 ]">
-                                    <nuxt-link :to="localePath('clients')" @click="isSideBar = !isSideBar"
-                                        class="w-full">
-                                        العملاء والمشاريع
-                                    </nuxt-link>
+                                    <!-- <nuxt-link :to="localePath('clients')" @click="isSideBar = !isSideBar" -->
+                                    class="w-full">
+                                    العملاء والمشاريع
+                                    <!-- </nuxt-link> -->
                                 </li>
                                 <li :class="[
                                     adjustedPath === '/suppliers' ? 'active' : '',
@@ -113,10 +113,10 @@
                                     adjustedPath === '/contact' ? 'active' : '',
                                     'text-white hover:text-PrimaryPL3',
                                 ]">
-                                    <nuxt-link :to="localePath('contact')" @click="isSideBar = !isSideBar"
-                                        class="w-full">
-                                        تواصل معنا
-                                    </nuxt-link>
+                                    <!-- <nuxt-link :to="localePath('contact')" @click="isSideBar = !isSideBar" -->
+                                    class="w-full">
+                                    تواصل معنا
+                                    <!-- </nuxt-link> -->
                                 </li>
                             </ul>
                         </nav>
