@@ -1,30 +1,39 @@
 <template>
 
-    <footer class="relative bg-black w-full rounded-t-2xl pt-36" :dir="locale === 'ar' ? 'rtl' : 'ltr'">
-        <div class="grid grid-cols-4 justify-between gap-20 max-w-[1392px] mx-auto">
+    <footer class="relative bg-[#030B16] w-full rounded-t-2xl pt-14 md:pt-36 pb-14 overflow-hidden"
+        :dir="locale === 'ar' ? 'rtl' : 'ltr'">
+        <div class="absolute left-0 max-md:top-0 bottom-0 z-10">
+            <img src="~/assets/img/Utils/footerPattern.svg" alt="footerPattern">
+        </div>
+        <div class="absolute right-0 bottom-0 z-10">
+            <img src="~/assets/img/Utils/footerPattern.svg" alt="footerPattern">
+        </div>
+        <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-between gap-6 md:gap-10 lg:gap-20 max-w-[1392px] mx-auto pb-14 md:pb-[72px] max-2xl:px-6 relative z-[25]">
             <div>
                 <nuxt-link :to="localePath('index')" class="block relative ">
                     <img src="~/assets/img/Utils/LogoW.svg" class="h-12 relative " alt="mcc" height="48px" width="260"
                         loading="eager" fetchpriority="high" />
                 </nuxt-link>
-                <p class="mt-4 font-medium text-lg text-[#CCCCCC]">الجودة التي تعتمد عليها، الحلول التي تحتاجها.</p>
-                <nuxt-link class="w-fit max-md:mx-auto block " to="/">
+                <p class="mt-4 font-medium text-lg text-[#CCCCCC] mb-6">الجودة التي تعتمد عليها، الحلول التي تحتاجها.
+                </p>
+                <nuxt-link class="w-fit  block " to="/">
                     <Button title="تواصل معنا" />
                 </nuxt-link>
             </div>
             <div>
                 <nav>
                     <ul>
-                        <li class="text-[#999999] text-base font-medium pb-4 border-b border-[#999999] w-full">المنتجات
+                        <li class="pt-0">المنتجات
                         </li>
-                        <li class="text-[#999999] text-base font-medium pb-4 border-b border-[#999999] w-full">الموردين
+                        <li class=" ">الموردين
                         </li>
-                        <li class="text-[#999999] text-base font-medium pb-4 border-b border-[#999999] w-full">العملاء
+                        <li class=" ">العملاء
                             والمشاريع
                         </li>
-                        <li class="text-[#999999] text-base font-medium pb-4 border-b border-[#999999] w-full">الشركة
+                        <li class=" ">الشركة
                         </li>
-                        <li class="text-[#999999] text-base font-medium pb-4 border-b border-[#999999] w-full">الرئيسية
+                        <li class="pb-0 ">الرئيسية
                         </li>
                     </ul>
                 </nav>
@@ -32,22 +41,48 @@
             <div>
                 <nav>
                     <ul>
-                        <li class="text-[#999999] text-base font-medium pb-4 border-b border-[#999999] w-full">تواصل
+                        <li class="pt-0 ">تواصل
                             معنا
                         </li>
-                        <li class="text-[#999999] text-base font-medium pb-4 border-b border-[#999999] w-full">سياسة
+                        <li class=" ">سياسة
                             الخصوصية
                         </li>
-                        <li class="text-[#999999] text-base font-medium pb-4 border-b border-[#999999] w-full">الشروط
+                        <li class="pb-0 ">الشروط
                             والأحكام
                         </li>
                     </ul>
                 </nav>
             </div>
+            <div>
+                <nav>
+                    <ul>
+                        <li class="pt-0 flex items-center gap-4 group">
+                            <i
+                                class="fa-solid fa-location-dot text-[#999999] group-hover:text-white transition-all duration-300 ease-linear"></i>
+                            <span>
+                                الفرع الرئيسي بجدة - شارع البلدية
+                            </span>
+                        </li>
+                        <li class="flex items-center gap-4 group">
+                            <i
+                                class="fa-solid fa-location-dot text-[#999999] group-hover:text-white transition-all duration-300 ease-linear"></i>
+                            <span>فرع الرياض - حي الياسمين - شارع أنس بن مالك - مبنى 25 سكوير</span>
+                        </li>
+                        <li class="pb-0 flex items-center gap-4 group">
+                            <i
+                                class="fa-solid fa-location-dot text-[#999999] group-hover:text-white transition-all duration-300 ease-linear"></i>
+                            <span>
+                                فرع الخبر الشمالية - شارع الأمير ناصر بن عبد العزيز
+                            </span>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-
-
-
+        <h1 class="px-4 text-center text-sm font-normal text-[#999999]">
+            جميع الحقوق محفوظه ٢٠٢٥ MCC. تصميم وتنفيذ <a href="https://do.com.sa/" target="_blank"
+                class="text-white">DO</a> ©
+        </h1>
     </footer>
 </template>
 
@@ -56,6 +91,15 @@ const localePath = useLocalePath();
 const { locale } = useI18n()
 
 
+
 </script>
 
-<style scoped></style>
+<style scoped>
+nav ul li {
+    @apply text-[#999999] text-base font-medium py-4 border-b border-[#999999] w-full hover:text-white transition-all ease-in-out duration-300 cursor-pointer hover:border-white
+}
+
+nav ul li.active {
+    color: #F4B300;
+}
+</style>

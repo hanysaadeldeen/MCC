@@ -6,7 +6,13 @@
     <HomeOurNumbersSection />
     <HomeClientsSection />
     <HomeProductsSection />
-    <HomeCTASection />
+    <CTASection title="  كن شريكًا لـ MCC:
+                لنجاح مشروعك" description="  المتفانون،
+                    نُحوِّل
+                    رؤيتك إلى واقع ملموس
+                    بمواد
+                    موثوقة وخبرة لا
+                    تلين." link='/' btnTitle="ابدأ شراكتك الآن!" />
   </main>
 </template>
 

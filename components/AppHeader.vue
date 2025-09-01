@@ -5,8 +5,8 @@
             <div class="relative z-40">
                 <div class="flex items-center justify-between ">
                     <nuxt-link :to="localePath('index')" class="block relative ">
-                        <img src="~/assets/img/Utils/Logo.svg" class="h-[50px]  xl:h-[70px] relative " alt="Mcc"
-                            height="70px" width="306" loading="eager" fetchpriority="high" />
+                        <img src="~/assets/img/Utils/Logo.svg" class="h-[50px] max-md:w-fit  xl:h-[70px] relative "
+                            alt="Mcc" height="70px" width="290" loading="eager" fetchpriority="high" />
                     </nuxt-link>
                     <div class="flex items-center justify-between gap-6">
                         <nav class="relative hidden lg:block h-full ">
@@ -26,8 +26,8 @@
                                         العملاء والمشاريع
                                     </nuxt-link>
                                 </li>
-                                <li :class="adjustedPath === '/services' ? 'active' : ''" class=" ">
-                                    <nuxt-link :to="localePath('services')">
+                                <li :class="adjustedPath === '/suppliers' ? 'active' : ''" class=" ">
+                                    <nuxt-link :to="localePath('suppliers')">
                                         الموردين
                                     </nuxt-link>
                                 </li>
@@ -54,14 +54,14 @@
             </div>
             <transition :name="transitionName">
                 <div v-if="isSideBar"
-                    class="sideBar fixed inset-x-0 top-0 z-30 flex h-[calc(100dvh)] w-full flex-col items-start px-11 transition-all sm:px-7 lg:hidden"
+                    class="sideBar fixed inset-x-0 top-0 z-30 flex h-[calc(100dvh)] w-full flex-col items-start px-6 md:px-11 transition-all sm:px-7 lg:hidden"
                     :class="[
                         {
                             'right-0': locale === 'ar',
                             'left-0': locale !== 'ar',
                         },
                     ]">
-                    <div class="pt-[136px]">
+                    <div class="pt-[83px] lg:pt-[100px]">
                         <nav class="mt-4 inline-block w-full">
                             <ul class="flex flex-col gap-5">
                                 <li :class="[
@@ -90,10 +90,11 @@
                                     </nuxt-link>
                                 </li>
                                 <li :class="[
-                                    adjustedPath === '/about' ? 'active' : '',
+                                    adjustedPath === '/suppliers' ? 'active' : '',
                                     'text-white hover:text-PrimaryPL3',
                                 ]">
-                                    <nuxt-link :to="localePath('about')" @click="isSideBar = !isSideBar" class="w-full">
+                                    <nuxt-link :to="localePath('suppliers')" @click="isSideBar = !isSideBar"
+                                        class="w-full">
                                         الموردين
                                     </nuxt-link>
                                 </li>
@@ -217,6 +218,12 @@ ul li {
     }
 }
 
+@media (max-width:768px) {
+    ul li {
+        padding: 8px 0px;
+    }
+}
+
 ul li a,
 ul li {
     display: inline-block;
@@ -236,7 +243,7 @@ ul li.active {
 
 .sideBar {
     background: linear-gradient(to right, #0a0911, #0a0911f5);
-    opacity: 0.8;
+    opacity: 0.9;
     will-change: transform;
 }
 

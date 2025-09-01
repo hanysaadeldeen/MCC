@@ -26,14 +26,19 @@
                     alt="HomeHeroPattern">
             </div>
             <div class="hidden xl:block absolute left-1/2 -translate-x-1/2 top-0 h-full w-3 bg-white"></div>
-            <div
-                class=" absolute left-1/2 -translate-x-1/2 -bottom-[37px] xl:-bottom-14 xl:size-28 bg-white flex justify-center items-center p-3 xl:p-5 rounded-full cursor-pointer group z-[15]">
+
+            <a href="#BrandSection">
+
                 <div
-                    class="rounded-full border border-[#A7C6F1] size-[50px] xl:size-[71px] p-3  xl:p-5 flex justify-center items-center">
-                    <i
-                        class="animate-translateXLoop  fa-solid fa-arrow-down-long text-primary text-2xl xl:text-4xl "></i>
+                    class=" absolute left-1/2 -translate-x-1/2 -bottom-[37px] xl:-bottom-14 xl:size-28 bg-white flex justify-center items-center p-3 xl:p-5 rounded-full cursor-pointer group z-[15]">
+                    <div
+                        class="rounded-full border border-[#A7C6F1] size-[50px] xl:size-[71px] p-3  xl:p-5 flex justify-center items-center">
+                        <i
+                            class="animate-translateXLoop  fa-solid fa-arrow-down-long text-primary text-2xl xl:text-4xl "></i>
+                    </div>
                 </div>
-            </div>
+            </a>
+
         </div>
     </section>
 </template>

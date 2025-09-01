@@ -1,14 +1,21 @@
 <template>
-    <section id="BrandSection" class="BrandSection bg-[#E9F1FC]">
-        <Vue3Marquee duration="100" :direction="locale === 'ar' ? 'reverse' : ''">
-            <img v-for="brand in Brands" :src="brand.img" :alt="brand.alt" :key="brand.id" class="mx-3" width="164"
-                height="68" />
-        </Vue3Marquee>
+    <section class="SuppliersBrandsSection">
+        <div class="max-w-[1392px] mx-auto max-xl:px-6">
+
+            <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 lg:gap-6">
+                <div class="bg-white shadow p-3 md:py-4 md:px-6 rounded-lg group overflow-hidden cursor-pointer"
+                    v-for="brand in Brands" :key="brand.id">
+                    <img :src="brand.img" :alt="brand.alt" width="164" height="68" class="object-contain group-hover:scale-110 transiti\
+                     ease-in-out duration-300">
+                </div>
+            </div>
+
+
+        </div>
     </section>
 </template>
 
 <script setup lang="ts">
-const { locale } = useI18n()
 
 import AFICO from "../../assets/img/Utils/Brands/AFICO.svg"
 import AGM from "../../assets/img/Utils/Brands/AGM.svg"
@@ -103,8 +110,6 @@ const Brands = [
     { id: 44, img: ZILMET, alt: "ZILMET" },
     { id: 45, img: nibco, alt: "nibco" },
 ]
-
-
 
 </script>
 
