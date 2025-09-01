@@ -10,7 +10,7 @@
         </div>
         <div
             class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-between gap-6 md:gap-10 lg:gap-20 max-w-[1392px] mx-auto pb-14 md:pb-[72px] max-2xl:px-6 relative z-[25]">
-            <div>
+            <div class="md:col-span-3 lg:col-span-1">
                 <nuxt-link :to="localePath('index')" class="block relative ">
                     <img src="~/assets/img/Utils/LogoW.svg" class="h-12 relative " alt="mcc" height="48px" width="260"
                         loading="eager" fetchpriority="high" />
@@ -24,16 +24,32 @@
             <div>
                 <nav>
                     <ul>
-                        <li class="pt-0">المنتجات
+                        <li class="pt-0" :class="adjustedPath === '/products' ? 'active' : ''">
+
+                            <nuxt-link :to="localePath('/products')">
+                                المنتجات
+                            </nuxt-link>
                         </li>
-                        <li class=" ">الموردين
+                        <li class=" " :class="adjustedPath === '/suppliers' ? 'active' : ''">
+                            <nuxt-link :to="localePath('/suppliers')">
+                                الموردين
+                            </nuxt-link>
                         </li>
-                        <li class=" ">العملاء
-                            والمشاريع
+                        <li class=" " :class="adjustedPath === '/clients' ? 'active' : ''">
+                            <nuxt-link :to="localePath('/clients')">
+                                العملاء
+                                والمشاريع
+                            </nuxt-link>
                         </li>
-                        <li class=" ">الشركة
+                        <li class=" " :class="adjustedPath === '/company' ? 'active' : ''">
+                            <nuxt-link :to="localePath('/company')">
+                                الشركة
+                            </nuxt-link>
                         </li>
-                        <li class="pb-0 ">الرئيسية
+                        <li class="pb-0 " :class="adjustedPath === '/' ? 'active' : ''">
+                            <nuxt-link :to="localePath('/')">
+                                الرئيسية
+                            </nuxt-link>
                         </li>
                     </ul>
                 </nav>
@@ -41,14 +57,22 @@
             <div>
                 <nav>
                     <ul>
-                        <li class="pt-0 ">تواصل
-                            معنا
+                        <li class="pt-0 " :class="adjustedPath === '/contactUs' ? 'active' : ''">
+                            <nuxt-link :to="localePath('/contactUs')">
+                                تواصل معنا
+                            </nuxt-link>
                         </li>
-                        <li class=" ">سياسة
-                            الخصوصية
+                        <li class=" " :class="adjustedPath === '/privacy' ? 'active' : ''">
+                            <nuxt-link :to="localePath('/privacy')">
+                                سياسة
+                                الخصوصية
+                            </nuxt-link>
                         </li>
-                        <li class="pb-0 ">الشروط
-                            والأحكام
+                        <li class="pb-0 " :class="adjustedPath === '/terms' ? 'active' : ''">
+                            <nuxt-link :to="localePath('/terms')">
+                                الشروط
+                                والأحكام
+                            </nuxt-link>
                         </li>
                     </ul>
                 </nav>
@@ -90,7 +114,17 @@
 const localePath = useLocalePath();
 const { locale } = useI18n()
 
+const route = useRoute();
 
+const getPathWithoutLocale = (path: string) => {
+    const segments = path.split("/");
+    if (segments[1] && segments[1].length === 2) {
+        return `/${segments.slice(2).join("/")}`;
+    }
+    return path;
+};
+
+const adjustedPath = computed(() => getPathWithoutLocale(route.path));
 
 </script>
 

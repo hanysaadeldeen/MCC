@@ -1,3 +1,25 @@
 {
-  "welcome": "مرحبا"
+  "products": {
+    "CASTIRONPIPES": "أنابيب ووصلات من الحديد الزهر",
+    "PVCCEMENT": "أسمنت PVC",
+    "DRAINAGESYSTEM": "أنظمة الصرف الصحي ",
+    "DUCTILEPIPES": "أنابيب ووصلات قابلة للسحب ",
+    "SANITARYFIXTURES": "أدوات صحية وكماليات الحمامات ",
+    "WATERTREATMENT": "معدات معالجة المياه ",
+    "PRESSURETANKS": "خزانات الضغط",
+    "RUBBERANDFIBER": "العزل المطاطي والليفي",
+    "NEUTRALIZATIONTANKS": "خزانات التحييد",
+    "TESTPLUGS": "سدادات الاختبار",
+    "PETROLEUMANDGAS": "خزانات تخزين البترول والمواد الكيميائية",
+    "SOLDERINGROD": "قضبان اللحام",
+    "PVCCPVPIPES": "أنابيب ووصلات PVC و CPVC ",
+    "COPPERPIPES": "أنابيب ووصلات من النحاس",
+    "WATERFLOW": "عدادات تدفق المياه",
+    "SEAMLESSERW": "أنابيب ووصلات غير ملحومة وERW",
+    "ELECTRICWATER": "سخانات المياه الكهربائية",
+    "BRONZECASTVALVES": "صمامات ووصلات من البرونز والحديد الزهر",
+    "COMPONENT81": "صمامات العوامة",
+    "MECHANICALR": "وصلات الميكانيكا والإصلاح ",
+    "WATERFOUNTAINS": "مبردات نافورة المياه، الأحواض "
+  }
 }

@@ -1,5 +1,5 @@
 <template>
-    <section class="HomeCTA max-xl:px-6" :dir="locale === 'ar' ? 'rtl' : 'ltr'">
+    <section class="CTA max-xl:px-6" :dir="locale === 'ar' ? 'rtl' : 'ltr'">
         <div
             class="max-w-[1392px] mx-auto bg-[#E9F1FC] rounded-[40px] py-14 md:py-20 px-4 lg:px-24 flex justify-between items-start gap-10 max-md:flex-col">
             <h1

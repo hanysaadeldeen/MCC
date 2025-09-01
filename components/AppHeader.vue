@@ -31,8 +31,8 @@
                                         الموردين
                                     </nuxt-link>
                                 </li>
-                                <li :class="adjustedPath.includes('/projects') ? 'active' : ''" class=" ">
-                                    <nuxt-link :to="localePath('projects')">
+                                <li :class="adjustedPath.includes('/products') ? 'active' : ''" class=" ">
+                                    <nuxt-link :to="localePath('products')">
                                         فئات المنتجات
                                     </nuxt-link>
                                 </li>
@@ -99,10 +99,10 @@
                                     </nuxt-link>
                                 </li>
                                 <li :class="[
-                                    adjustedPath === '/careers' ? 'active' : '',
+                                    adjustedPath === '/products' ? 'active' : '',
                                     'text-white hover:text-PrimaryPL3',
                                 ]">
-                                    <nuxt-link :to="localePath('careers')" @click="isSideBar = !isSideBar"
+                                    <nuxt-link :to="localePath('products')" @click="isSideBar = !isSideBar"
                                         class="w-full">
                                         فئات المنتجات
                                     </nuxt-link>
