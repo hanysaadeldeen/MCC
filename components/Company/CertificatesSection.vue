@@ -5,15 +5,22 @@
 
             <div
                 class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 justify-center w-full md:w-fit mx-auto">
-                <div class="border rounded-xl border-[#CCCCCC] p-8 w-full md:max-w-[330px]"
+                <div class="border rounded-xl border-[#CCCCCC] p-8 w-full md:max-w-[330px] flex flex-col justify-between"
                     v-for="certificate in Certificates" :key="certificate.id">
-                    <img :src="certificate.img" :alt="certificate.title" class=" w-fit block mx-auto max-md:size-36"
-                        width="212" height="220" loading="lazy">
-                    <div class="my-4 md:my-6 text-center">
-                        <h1 class="text-2xl lg:text-3xl font-medium mb-2">{{ certificate.title }}</h1>
-                        <p class='text-base lg:text-lg font-medium text-paragraph'>{{ certificate.description }}</p>
+                    <div>
+                        <img :src="certificate.img" :alt="certificate.title" class=" w-fit block mx-auto max-md:size-36"
+                            width="212" height="220" loading="lazy">
+                        <div class="my-4 md:my-6 text-center">
+                            <h1 class="text-2xl lg:text-3xl font-medium mb-2">{{ certificate.title }}</h1>
+                            <p class='text-base lg:text-lg font-medium text-paragraph'>{{ certificate.description }}</p>
+                        </div>
                     </div>
-                    <button-more title="شاهد الشهادة كاملة" :link="certificate.link" />
+                    <a :href="certificate.link" download class="w-fit mx-auto block mt-6">
+                        <button
+                            class="text-primary border border-primary bg-white py-2 px-6 text-xl font-medium rounded-lg hover:bg-primary hover:text-white transition-all duration-300 ease-in-out ">
+                            {{ certificate.title }}
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -31,7 +38,7 @@ const Certificates = [
         img: ISO2018,
         title: "ISO 45001:2018",
         description: "أنظمة إدارة الصحة والسلامة المهنية",
-        link: ""
+        link: "/ISO 45001 2018.pdf"
     },
 
     {
@@ -39,14 +46,14 @@ const Certificates = [
         img: ISO20152,
         title: "ISO 14001:2015",
         description: "أنظمة الإدارة البيئية",
-        link: ""
+        link: "/ISO 14001 2015.pdf"
     },
     {
         id: 1,
         img: ISO2015,
         title: "ISO 9001:2015",
         description: "أنظمة إدارة الجودة",
-        link: ""
+        link: "/ISO 9001 2015.pdf"
     },
 
 ]

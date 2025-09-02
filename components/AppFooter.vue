@@ -17,7 +17,7 @@
                 </nuxt-link>
                 <p class="mt-4 font-medium text-lg text-[#CCCCCC] mb-6">الجودة التي تعتمد عليها، الحلول التي تحتاجها.
                 </p>
-                <nuxt-link class="w-fit  block " to="/">
+                <nuxt-link class="w-fit  block " to="/contactUs">
                     <Button title="تواصل معنا" />
                 </nuxt-link>
             </div>

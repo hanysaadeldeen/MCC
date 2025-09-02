@@ -11,27 +11,27 @@
                     <div class="flex items-center justify-between gap-6">
                         <nav class="relative hidden lg:block h-full ">
                             <ul class="flex  items-center">
-                                <li :class="adjustedPath === '/' ? 'active' : ''" class=" ">
+                                <li :class="adjustedPath === '/' ? 'active' : ''">
                                     <nuxt-link :to="localePath('index')">
                                         الرئيسية
                                     </nuxt-link>
                                 </li>
-                                <li :class="adjustedPath === '/company' ? 'active' : ''" class=" ">
+                                <li :class="adjustedPath === '/company' ? 'active' : ''">
                                     <nuxt-link :to="localePath('company')">
                                         الشركة
                                     </nuxt-link>
                                 </li>
-                                <li :class="adjustedPath === '/clients' ? 'active' : ''" class=" ">
-                                    <!-- <nuxt-link :to="localePath('clients')"> -->
-                                    العملاء والمشاريع
-                                    <!-- </nuxt-link> -->
+                                <li :class="adjustedPath === '/projects' ? 'active' : ''">
+                                    <nuxt-link :to="localePath('projects')">
+                                        العملاء والمشاريع
+                                    </nuxt-link>
                                 </li>
-                                <li :class="adjustedPath === '/suppliers' ? 'active' : ''" class=" ">
+                                <li :class="adjustedPath === '/suppliers' ? 'active' : ''">
                                     <nuxt-link :to="localePath('suppliers')">
                                         الموردين
                                     </nuxt-link>
                                 </li>
-                                <li :class="adjustedPath.includes('/products') ? 'active' : ''" class=" ">
+                                <li :class="adjustedPath.includes('/products') ? 'active' : ''">
                                     <nuxt-link :to="localePath('products')">
                                         فئات المنتجات
                                     </nuxt-link>
@@ -83,13 +83,13 @@
                                     </nuxt-link>
                                 </li>
                                 <li :class="[
-                                    adjustedPath === '/clients' ? 'active' : '',
+                                    adjustedPath === '/projects' ? 'active' : '',
                                     'text-white hover:text-PrimaryPL3',
                                 ]">
-                                    <!-- <nuxt-link :to="localePath('clients')" @click="isSideBar = !isSideBar" -->
-                                    class="w-full">
-                                    العملاء والمشاريع
-                                    <!-- </nuxt-link> -->
+                                    <nuxt-link :to="localePath('projects')" @click="isSideBar = !isSideBar"
+                                        class="w-full">
+                                        العملاء والمشاريع
+                                    </nuxt-link>
                                 </li>
                                 <li :class="[
                                     adjustedPath === '/suppliers' ? 'active' : '',

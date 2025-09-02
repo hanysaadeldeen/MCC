@@ -10,7 +10,7 @@
                 <p class="text-xl font-medium text-[#4B5461] mb-6 max-md:text-center md:max-w-[451px]">نحن شركاؤك
                     {{
                         description }}</p>
-                <nuxt-link class="w-fit max-md:mx-auto block " :to="link">
+                <nuxt-link class="w-fit max-md:mx-auto block " to="/contactUs">
                     <Button :title="btnTitle" />
                 </nuxt-link>
 

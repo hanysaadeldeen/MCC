@@ -4,6 +4,7 @@
             description="شركة التوريدات الميكانيكية والكيماوية المحدودة (MCC) هي إحدى أبرز موزعي المنتجات الكهروميكانيكية في المملكة العربية السعودية ودول مجلس التعاون الخليجي، بخبرة تزيد عن 45 عامًا" />
 
 
+        <CompanyHistory />
         <OurNumbersSection />
         <CertificatesSection />
         <VisionAndMission />

@@ -4,6 +4,7 @@
     <HomeHookSection />
     <HomeBrandsSection />
     <OurNumbersSection />
+    <HomeProjectsSection />
     <HomeClientsSection />
     <HomeProductsSection />
     <CTASection title="  كن شريكًا لـ MCC:

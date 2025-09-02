@@ -26,7 +26,7 @@
             </Swiper>
 
 
-            <button-more title=" تعرف على كافة العملاء" link="/" />
+            <button-more title=" تعرف على كافة العملاء" link="/projects" />
         </div>
 
     </section>

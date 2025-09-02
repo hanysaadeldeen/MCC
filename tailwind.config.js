@@ -14,6 +14,7 @@ export default {
         primary: "#16498E",
         secondary: "#F4B300",
         secondaryT: "#D9A600",
+        secondaryHook: "#FFD666",
         Text: "#0B2547",
         paragraph: "#4F5A69",
       },

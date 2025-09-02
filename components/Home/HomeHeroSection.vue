@@ -18,7 +18,9 @@
                         بخبرة
                         تمتد لأكثر من
                         45 عامًا.</p>
-                    <Button title="إكتشف منتجاتنا" />
+                    <nuxt-link to="/products">
+                        <Button title="إكتشف منتجاتنا" />
+                    </nuxt-link>
                 </div>
             </div>
             <div class="hidden xl:block w-full xl:w-1/2 xl:max-w-[954px] max-w-[954px] ">

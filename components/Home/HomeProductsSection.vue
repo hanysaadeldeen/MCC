@@ -27,7 +27,7 @@
 
             </Swiper>
 
-            <button-more title=" تصفح كافة المجالات" link="/" />
+            <button-more title=" تصفح كافة المجالات" link="/products" />
 
         </div>
 
