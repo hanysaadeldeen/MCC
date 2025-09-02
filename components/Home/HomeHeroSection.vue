@@ -1,7 +1,6 @@
 <template>
     <section class="HomeHeroSection w-full  lg:max-w-[1920px] mx-auto" :dir="locale === 'ar' ? 'rtl' : 'ltr'">
         <div class="flex justify-between h-fit relative w-full ">
-            <!--  -->
             <div
                 class="w-full xl:w-1/2 xl:max-w-[954px]  bg-[#E9F1FC] py-16 max-xl:px-6 flex justify-center items-center relative">
                 <div class="absolute top-0 left-0 w-full h-full z-10 ">

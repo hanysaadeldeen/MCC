@@ -30,18 +30,18 @@
                                 المنتجات
                             </nuxt-link>
                         </li>
-                        <li class=" " :class="adjustedPath === '/suppliers' ? 'active' : ''">
+                        <li :class="adjustedPath === '/suppliers' ? 'active' : ''">
                             <nuxt-link :to="localePath('/suppliers')">
                                 الموردين
                             </nuxt-link>
                         </li>
-                        <li class=" " :class="adjustedPath === '/clients' ? 'active' : ''">
-                            <!-- <nuxt-link :to="localePath('/clients')"> -->
-                            العملاء
-                            والمشاريع
-                            <!-- </nuxt-link> -->
+                        <li :class="adjustedPath === '/projects' ? 'active' : ''">
+                            <nuxt-link :to="localePath('/projects')">
+                                العملاء
+                                والمشاريع
+                            </nuxt-link>
                         </li>
-                        <li class=" " :class="adjustedPath === '/company' ? 'active' : ''">
+                        <li :class="adjustedPath === '/company' ? 'active' : ''">
                             <nuxt-link :to="localePath('/company')">
                                 الشركة
                             </nuxt-link>
@@ -62,7 +62,7 @@
                                 تواصل معنا
                             </nuxt-link>
                         </li>
-                        <li class=" " :class="adjustedPath === '/privacy' ? 'active' : ''">
+                        <li :class="adjustedPath === '/privacy' ? 'active' : ''">
                             <nuxt-link :to="localePath('/privacy')">
                                 سياسة
                                 الخصوصية
