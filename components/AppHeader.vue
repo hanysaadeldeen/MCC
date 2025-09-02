@@ -40,9 +40,9 @@
                         </nav>
                         <div class="hidden  justify-between  lg:flex items-center gap-2 xl:gap-6">
                             <LanguageSwitcher />
-                            <!-- <nuxt-link :to="localePath('contact')"> -->
-                            <Button title="تواصل معنا" />
-                            <!-- </nuxt-link> -->
+                            <nuxt-link :to="localePath('contactUs')">
+                                <Button title="تواصل معنا" />
+                            </nuxt-link>
                         </div>
                     </div>
                     <div class="lg:hidden text-2xl cursor-pointer sm:text-3xl">
@@ -110,13 +110,13 @@
                                     </nuxt-link>
                                 </li>
                                 <li :class="[
-                                    adjustedPath === '/contact' ? 'active' : '',
+                                    adjustedPath === '/contactUs' ? 'active' : '',
                                     'text-white hover:text-PrimaryPL3',
                                 ]">
-                                    <!-- <nuxt-link :to="localePath('contact')" @click="isSideBar = !isSideBar" -->
-                                    class="w-full">
-                                    تواصل معنا
-                                    <!-- </nuxt-link> -->
+                                    <nuxt-link :to="localePath('contactUs')" @click="isSideBar = !isSideBar"
+                                        class="w-full">
+                                        تواصل معنا
+                                    </nuxt-link>
                                 </li>
                             </ul>
                         </nav>

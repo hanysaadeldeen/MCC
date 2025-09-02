@@ -58,9 +58,9 @@
                 <nav>
                     <ul>
                         <li class="pt-0 " :class="adjustedPath === '/contactUs' ? 'active' : ''">
-                            <!-- <nuxt-link :to="localePath('/contactUs')"> -->
-                            تواصل معنا
-                            <!-- </nuxt-link> -->
+                            <nuxt-link :to="localePath('/contactUs')">
+                                تواصل معنا
+                            </nuxt-link>
                         </li>
                         <li class=" " :class="adjustedPath === '/privacy' ? 'active' : ''">
                             <nuxt-link :to="localePath('/privacy')">
