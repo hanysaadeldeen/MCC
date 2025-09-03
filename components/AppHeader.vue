@@ -65,11 +65,10 @@
                         <nav class="mt-4 inline-block w-full">
                             <ul class="flex flex-col gap-5">
                                 <li :class="[
-                                    adjustedPath === '/projects' ? 'active' : '',
+                                    adjustedPath === '/' ? 'active' : '',
                                     'text-white hover:text-PrimaryPL3',
                                 ]">
-                                    <nuxt-link :to="localePath('projects')" @click="isSideBar = !isSideBar"
-                                        class="w-full">
+                                    <nuxt-link :to="localePath('index')" @click="isSideBar = !isSideBar" class="w-full">
                                         الرئيسية
                                     </nuxt-link>
                                 </li>

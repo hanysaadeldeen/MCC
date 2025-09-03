@@ -2,6 +2,8 @@
     <section class="ProductsSection max-xl:px-6" :dir="locale === 'ar' ? 'rtl' : 'ltr'">
         <div class="max-w-[1392px] mx-auto">
             <TitleSection title="مجالات منتجاتنا" />
+
+
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-4 lg:gap-6">
                 <div class="relative shadow rounded-2xl group cursor-pointer" v-for="product in Products"
                     :key="product.id">
