@@ -22,9 +22,32 @@
                     </nuxt-link>
                 </div>
             </div>
-            <div class="hidden xl:block w-full xl:w-1/2 xl:max-w-[954px] max-w-[954px] ">
-                <img src="~/assets/img/Home/HomeHeroSection.jpg" class="object-cover w-full h-full"
-                    alt="HomeHeroPattern">
+            <div class="hidden xl:block w-full xl:w-1/2 xl:max-w-[954px] max-w-[954px] max-h-[740px] relative">
+
+                <Swiper :modules="[Autoplay]" :loop="true" :slides-per-view="'auto'" :free-mode="true" :speed="6000"
+                    :autoplay="{
+                        delay: 1,
+                        disableOnInteraction: false,
+                        pauseOnMouseEnter: false
+                    }" class="partner-slider max-h-full">
+                    <SwiperSlide class="!w-auto h-full flex items-center justify-center">
+                        <img src="~/assets/img/Home/HomeHeroPatternOne.webp" alt="HomeHeroSectionOne"
+                            class=" w-full h-full object-contain" />
+                    </SwiperSlide>
+                    <SwiperSlide class="!w-auto flex items-center justify-center">
+                        <img src="~/assets/img/Home/HomeHeroPatternTwo.webp" alt="HomeHeroSectionTwo"
+                            class=" w-full h-full object-contain" />
+                    </SwiperSlide>
+                    <SwiperSlide class="!w-auto flex items-center justify-center">
+                        <img src="~/assets/img/Home/HomeHeroPatternThree.webp" alt="HomeHeroPatternThree"
+                            class=" w-full h-full object-contain" />
+                    </SwiperSlide>
+                    <SwiperSlide class="!w-auto flex items-center justify-center">
+                        <img src="~/assets/img/Home/HomeHeroPatternFour.webp" alt="HomeHeroSectionFour"
+                            class=" w-full h-full object-contain" />
+                    </SwiperSlide>
+
+                </Swiper>
             </div>
             <div class="hidden xl:block absolute left-1/2 -translate-x-1/2 top-0 h-full w-3 bg-white"></div>
 
@@ -35,7 +58,7 @@
                     <div
                         class="rounded-full border border-[#A7C6F1] size-[50px] xl:size-[71px] p-3  xl:p-5 flex justify-center items-center">
                         <i
-                            class="animate-translateXLoop  fa-solid fa-arrow-down-long text-primary text-2xl xl:text-4xl "></i>
+                            class="animate-translateXLoop  fa-solid fa-arrow-down-long text-primary text-xl lg:text-3xl "></i>
                     </div>
                 </div>
             </a>
@@ -46,7 +69,9 @@
 
 <script setup lang="ts">
 const { locale } = useI18n()
-
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import { Autoplay } from 'swiper/modules';
+import 'swiper/css';
 </script>
 
 <style scoped>

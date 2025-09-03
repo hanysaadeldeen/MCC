@@ -211,7 +211,9 @@
                             <div
                                 class="absolute -bottom-24 group-hover:bottom-0 transition-all duration-300 ease-in-out left-0 w-full h-fit p-3 md:p-5 Projecttitle">
                                 <h1 class="text-primary text-base md:text-lg lg:text-xl font-bold text-center">
-                                    مشروع برج ساعة مكة المكرمة
+
+                                    مشروع بوابة الدرعية
+
                                 </h1>
                             </div>
                         </div>
@@ -222,7 +224,8 @@
                             <div
                                 class="absolute -bottom-24 group-hover:bottom-0 transition-all duration-300 ease-in-out left-0 w-full h-fit p-5 Projecttitle">
                                 <h1 class="text-primary text-base md:text-lg lg:text-xl font-bold text-center">
-                                    مشروع بوابة الدرعية
+                                    مشروع برج ساعة مكة المكرمة
+
                                 </h1>
                             </div>
                         </div>
