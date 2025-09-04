@@ -1,7 +1,7 @@
 <template>
     <section class="CompanyHistorySection">
         <div class="max-w-[1392px] mx-auto max-xl:px-6">
-            <TitleSection title="تاريخنا حافل بالإنجازات" />
+            <TitleSection title="about.history.title" />
             <div class="BigScreen hidden lg:flex justify-center  max-xl:items-center gap-16 max-xl:flex-col">
                 <h1 class="text-primary font-bold text-3xl md:text-4xl lg:text-5xl mt-[60px]">1978</h1>
                 <div class="flex gap-16 justify-between relative w-fit  px-10">
@@ -13,12 +13,12 @@
                     </div>
                     <div class="absolute top-[86px] bg-secondary w-full h-[1px] left-0"></div>
                     <div class="flex flex-col gap-8 max-w-[212px] justify-center items-center" v-for="hist in History">
-                        <p class="text-Text font-bold text-xl text-center">{{ hist.title }}</p>
+                        <p class="text-Text font-bold text-xl text-center">{{ $t(hist.title) }}</p>
                         <div class="relative h-[89px] rounded-lg w-1 bg-secondary">
                             <div class="absolute top-4 rounded-full size-5 bg-secondary left-1/2 -translate-x-1/2">
                             </div>
                         </div>
-                        <p class="text-paragraph font-medium text-base text-center">{{ hist.description }}</p>
+                        <p class="text-paragraph font-medium text-base text-center">{{ $t(hist.description) }}</p>
                     </div>
                 </div>
             </div>
@@ -39,15 +39,15 @@
                         <div
                             class="absolute max-sm:top-10 sm:top-1/2 rounded-full size-5 bg-secondary max-sm:-right-2 sm:left-1/2  sm:-translate-x-1/2 -translate-y-1/2">
                         </div>
-                        <p class="hidden sm:block text-Text font-bold text-xl text-center sm:min-w-[250px]">{{
-                            hist.title }}</p>
+                        <p class="hidden sm:block text-Text font-bold text-xl text-center sm:min-w-[250px]"> {{
+                            $t(hist.title) }}</p>
                         <div class="sm:min-w-[120px]"></div>
                         <div class="max-sm:pr-12">
-                            <p class="sm:hidden text-Text font-bold text-xl sm:text-center sm:min-w-[250px] mb-4">{{
-                                hist.title }}</p>
+                            <p class="sm:hidden text-Text font-bold text-xl sm:text-center sm:min-w-[250px] mb-4">
+                                {{ $t(hist.title) }}</p>
                             <p
                                 class="text-paragraph font-medium text-base sm:text-center max-sm:w-full sm:max-w-[250px] sm:min-w-[250px] ">
-                                {{ hist.description }}
+                                {{ $t(hist.description) }}
                             </p>
                         </div>
                     </div>
@@ -62,20 +62,20 @@
 
 const History = [
     {
-        title: "تأسيس الشركة",
-        description: "بداية رحلتنا كمورد رئيسي للمواد الميكانيكية والكيميائية عالية الجودة في المملكة على يد محمد ي. الحموري."
+        title: "about.history.one.title",
+        description: "about.history.one.paragraph"
     },
     {
-        title: "مرحلة النمو",
-        description: "نمو كبير للشركة خلال سنوات الازدهار الاقتصادي والصناعي في المملكة، حيث شاركنا بفاعلية في دعم المشاريع الكبرى."
+        title: "about.history.two.title",
+        description: "about.history.two.paragraph"
     },
     {
-        title: "التوسع في المملكة",
-        description: "بصمة وطنية قوية نتجت عن توسع شبكة فروعنا لتشمل جدة والرياض والخبر، لنكون أقرب لعملائنا في جميع أنحاء المملكة."
+        title: "about.history.three.title",
+        description: "about.history.three.paragraph"
     },
     {
-        title: "إرث من الريادة",
-        description: "مسيرة ممتدة لأكثر من 45 عامًا، نورد خلالها حلولًا موثوقة لمشاريع القطاعين الحكومي والخاص على حد سواء."
+        title: "about.history.four.title",
+        description: "about.history.four.paragraph"
     },
 ]
 

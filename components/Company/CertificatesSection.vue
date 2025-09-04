@@ -1,7 +1,7 @@
 <template>
     <section class="CertificatesSection max-xl:px-6">
         <div class="max-w-[1392px] mx-auto">
-            <TitleSection title="التزامنا بالجودة العالمية: شهاداتنا الدولية" />
+            <TitleSection title="about.certifications.title" />
 
             <div
                 class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 justify-center w-full md:w-fit mx-auto">
@@ -12,7 +12,8 @@
                             width="212" height="220" loading="lazy">
                         <div class="my-4 md:my-6 text-center">
                             <h1 class="text-2xl lg:text-3xl font-medium mb-2">{{ certificate.title }}</h1>
-                            <p class='text-base lg:text-lg font-medium text-paragraph'>{{ certificate.description }}</p>
+                            <p class='text-base lg:text-lg font-medium text-paragraph'>{{ $t(certificate.description) }}
+                            </p>
                         </div>
                     </div>
                     <a :href="certificate.link" download class="w-fit mx-auto block mt-6">
@@ -37,7 +38,7 @@ const Certificates = [
         id: 3,
         img: ISO2018,
         title: "ISO 45001:2018",
-        description: "أنظمة إدارة الصحة والسلامة المهنية",
+        description: "about.certifications.iso2018",
         link: "/ISO 45001 2018.pdf"
     },
 
@@ -45,14 +46,14 @@ const Certificates = [
         id: 2,
         img: ISO20152,
         title: "ISO 14001:2015",
-        description: "أنظمة الإدارة البيئية",
+        description: "about.certifications.iso142015",
         link: "/ISO 14001 2015.pdf"
     },
     {
         id: 1,
         img: ISO2015,
         title: "ISO 9001:2015",
-        description: "أنظمة إدارة الجودة",
+        description: "about.certifications.iso92015",
         link: "/ISO 9001 2015.pdf"
     },
 

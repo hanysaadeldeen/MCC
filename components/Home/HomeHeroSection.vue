@@ -7,46 +7,36 @@
                     <img src="~/assets/img/Utils/HomeHeroPattern.svg" class="object-fill w-full h-full"
                         alt="HomeHeroPattern">
                 </div>
-                <div class="max-w-[474px] mx-auto z-[15] max-xl:text-center">
+                <div class=" mx-auto z-[15] max-xl:text-center"
+                    :class="locale === 'ar' ? 'max-w-[474px]' : 'max-w-[550px]'">
                     <h1 class=" text-3xl md:text-4xl xl:text-6xl xl:!leading-[90px] font-bold mb-4">
-                        شريكك الموثوق في عالم التوريدات
+                        {{ $t("home.heroSection.title") }}
                     </h1>
-                    <p class="text-lg font-medium text-paragraph max-w-[379px] max-xl:mx-auto mb-6">نورد مواد عالية
-                        الجودة
-                        لمشاريعك،
-                        بخبرة
-                        تمتد لأكثر من
-                        45 عامًا.</p>
+                    <p class="text-lg font-medium text-paragraph  max-xl:mx-auto mb-6"
+                        :class="locale === 'ar' ? 'max-w-[379px]' : 'max-w-[400px]'">
+                        {{ $t("home.heroSection.paragraph") }}
+                    </p>
                     <nuxt-link to="/products">
-                        <Button title="إكتشف منتجاتنا" />
+                        <Button title="home.heroSection.btn" />
                     </nuxt-link>
                 </div>
             </div>
             <div class="hidden xl:block w-full xl:w-1/2 xl:max-w-[954px] max-w-[954px] max-h-[740px] relative">
-
-                <Swiper :modules="[Autoplay]" :loop="true" :free-mode="true" :speed="6000" :slides-per-view="'auto'"
-                    :autoplay="{
-                        delay: 1,
-                        disableOnInteraction: false,
-                        pauseOnMouseEnter: false
-                    }" class="partner-slider max-h-full">
-                    <SwiperSlide class="!w-auto h-full flex items-center justify-center">
-                        <img src="~/assets/img/Home/HomeHeroPatternOne.webp" alt="HomeHeroSectionOne"
-                            class=" w-full h-full object-contain" />
+                <Swiper :modules="modules" effect="fade" :fade-effect="{ crossFade: true }"
+                    :autoplay="{ delay: 3000, disableOnInteraction: false }"
+                    class="partner-slider h-[320px] xl:h-[600px] 2xl:h-[740px]">
+                    <SwiperSlide class="h-full flex items-center justify-center">
+                        <img :src="p1" alt="HomeHeroSectionOne" class="w-full h-full object-cover" />
                     </SwiperSlide>
-                    <SwiperSlide class="!w-auto flex items-center justify-center">
-                        <img src="~/assets/img/Home/HomeHeroPatternTwo.webp" alt="HomeHeroSectionTwo"
-                            class=" w-full h-full object-contain" />
+                    <SwiperSlide class="h-full flex items-center justify-center">
+                        <img :src="p2" alt="HomeHeroSectionTwo" class="w-full h-full object-cover" />
                     </SwiperSlide>
-                    <SwiperSlide class="!w-auto flex items-center justify-center">
-                        <img src="~/assets/img/Home/HomeHeroPatternThree.webp" alt="HomeHeroPatternThree"
-                            class=" w-full h-full object-contain" />
+                    <SwiperSlide class="h-full flex items-center justify-center">
+                        <img :src="p3" alt="HomeHeroPatternThree" class="w-full h-full object-cover" />
                     </SwiperSlide>
-                    <SwiperSlide class="!w-auto flex items-center justify-center">
-                        <img src="~/assets/img/Home/HomeHeroPatternFour.webp" alt="HomeHeroSectionFour"
-                            class=" w-full h-full object-contain" />
+                    <SwiperSlide class="h-full flex items-center justify-center">
+                        <img :src="p4" alt="HomeHeroSectionFour" class="w-full h-full object-cover" />
                     </SwiperSlide>
-
                 </Swiper>
             </div>
             <div class="hidden xl:block absolute left-1/2 -translate-x-1/2 top-0 h-full w-3 bg-white"></div>
@@ -69,9 +59,16 @@
 
 <script setup lang="ts">
 const { locale } = useI18n()
-import { Swiper, SwiperSlide } from 'swiper/vue';
-import { Autoplay } from 'swiper/modules';
-import 'swiper/css';
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import { EffectFade, Autoplay } from 'swiper/modules'
+import 'swiper/css'
+import 'swiper/css/effect-fade';
+const modules = [EffectFade, Autoplay]
+
+import p1 from '../../assets/img/Home/HomeHeroPatternOne.webp'
+import p2 from '../../assets/img/Home/HomeHeroPatternTwo.webp'
+import p3 from '../../assets/img/Home/HomeHeroPatternThree.webp'
+import p4 from '../../assets/img/Home/HomeHeroPatternFour.webp'
 </script>
 
 <style scoped>

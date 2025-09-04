@@ -1,8 +1,7 @@
 <template>
 
     <main class="Contact " :dir="locale === 'ar' ? 'rtl' : 'ltr'">
-        <HeroSection title="تواصل مع فريق الخبراء لدينا"
-            description="نحن هنا لتقديم الدعم الفني والإجابة على كل استفساراتك، ومساعدتك في اختيار أفضل الحلول لمشروعك من خلال خبرتنا الممتدة لأكثر من 45 عامًا." />
+        <HeroSection title="contact.heroSection.title" description="contact.heroSection.paragraph" />
 
         <section class="formSection max-w-[1392px] mx-auto max-2xl:px-6">
             <div class="mt-[128px] flex flex-row-reverse max-md:flex-col items-start  justify-end w-full  gap-6">
@@ -12,7 +11,11 @@
 
                         <div class="email flex flex-col  bg-white shadow-md p-6 lg-p-8  xl:p-10 rounded-2xl ">
 
-                            <p class="text-xl font-medium mb-5 text-Text">البريد الإلكتروني</p>
+                            <p class="text-xl font-medium mb-5 text-Text">
+                                {{
+                                    locale === 'ar' ? 'البريد الإلكتروني' : 'Email' }}
+
+                            </p>
                             <p
                                 class="text-secondParagraph text-lg  cursor-pointer duration-200 ease-in-out text-paragraph">
                                 <a href="https://mail.google.com/mail/?view=cm&to=hammouri@mcc.com.sa"
@@ -20,7 +23,11 @@
                             </p>
                         </div>
                         <div class="whatsapp flex flex-col  bg-white shadow-md p-6 lg-p-8  xl:p-10 rounded-2xl ">
-                            <p class="text-xl font-medium mb-5 text-Text">الهاتف</p>
+                            <p class="text-xl font-medium mb-5 text-Text">
+
+                                {{
+                                    locale === 'ar' ? 'الهاتف' : 'phone' }}
+                            </p>
                             <p class="text-secondParagraph text-lg ">
                                 <a href="https://wa.me/966502904556" target="_blank"
                                     class="cursor-pointer duration-200 ease-in-out text-paragraph">
@@ -29,7 +36,11 @@
                             </p>
                         </div>
                         <div class="flex flex-col  bg-white shadow-md p-6 lg-p-8  xl:p-10 rounded-2xl">
-                            <p class="text-xl font-medium mb-5 text-Text">مواقع التواصل الإجتماعي</p>
+                            <p class="text-xl font-medium mb-5 text-Text">
+
+                                {{
+                                    locale === 'ar' ? 'مواقع التواصل الإجتماعي' : 'social media sites' }}
+                            </p>
                             <div class="flex flex-wrap gap-3 md:gap-4">
                                 <div class="flex h-10 w-10 items-center justify-center rounded-full border border-[#7B7B7B] group cursor-pointer hover:border-[#474747] transition-all duration-200 ease-in-out "
                                     v-for="social in SocialMedia" :key="social.id">
@@ -42,9 +53,21 @@
                             </div>
                         </div>
                         <div class="posta flex flex-col  bg-white shadow-md p-6 lg-p-8  xl:p-10 rounded-2xl">
-                            <p class="text-xl font-medium mb-5 text-Text">البريد</p>
-                            <p class="text-lg font-medium text-paragraph ">ص.ب: 7613</p>
-                            <p class="text-lg font-medium  text-paragraph ">الرمز البريدي: 21472</p>
+                            <p class="text-xl font-medium mb-5 text-Text">
+                                {{
+                                    locale === 'ar' ? 'البريد' : 'mail' }}
+                            </p>
+                            <p class="text-lg font-medium text-paragraph ">
+
+
+                                {{ locale === 'ar' ? 'ص.ب' : 'P.O. Box' }}
+
+                                :7613</p>
+                            <p class="text-lg font-medium  text-paragraph ">
+
+                                {{ locale === 'ar' ? 'الرمز البريدي' : 'zip code' }}
+
+                                :21472</p>
                         </div>
                     </div>
                 </div>
@@ -66,7 +89,7 @@
                                     :class="{ '!border-red-500': errors.FirstName }" />
                                 <span class="text-red-500 text-sm">{{
                                     errors.FirstName
-                                }}</span>
+                                    }}</span>
                             </div>
                             <div class="flex flex-col w-full lg:max-w-[304px]">
                                 <label for="LastName"
@@ -81,7 +104,7 @@
                                     :class="{ '!border-red-500': errors.LastName }" />
                                 <span class="text-red-500 text-sm">{{
                                     errors.LastName
-                                }}</span>
+                                    }}</span>
                             </div>
                         </div>
                         <div class="flex max-lg:flex-col gap-4 lg:gap-8 mb-4 lg:mb-8">
@@ -98,7 +121,7 @@
                                     :class="{ '!border-red-500': errors.phoneNumber }" />
                                 <span class="text-red-500 text-sm">{{
                                     errors.phoneNumber
-                                }}</span>
+                                    }}</span>
                             </div>
                             <div class="flex flex-col w-full lg:max-w-[304px]">
                                 <label for="email"
@@ -129,13 +152,16 @@
                                 :class="{ '!border-red-500': errors.message }" />
                             <span class="text-red-500 text-sm">{{ errors.message }}</span>
                         </div>
-                        <Button type="submit" class="mt-8 sm:px-24 max-sm:w-full" title="إرسال" />
+                        <Button type="submit" class="mt-8 sm:px-24 max-sm:w-full" title="contact.heroSection.btn" />
                     </Form>
                 </div>
             </div>
             <div class="MobileScreen md:hidden flex flex-col gap-6 md:gap-8">
                 <div class="email flex flex-col  bg-white shadow-md p-6 lg-p-8  xl:p-10 rounded-2xl ">
-                    <p class="text-xl font-medium mb-5 text-Text">البريد الإلكتروني</p>
+                    <p class="text-xl font-medium mb-5 text-Text">
+                        {{
+                            locale === 'ar' ? 'البريد الإلكتروني' : 'Email' }}
+                    </p>
                     <p
                         class="text-secondParagraph text-lg md:text-base cursor-pointer duration-200 ease-in-out text-paragraph">
                         <a href="https://mail.google.com/mail/?view=cm&to=hammouri@mcc.com.sa"
@@ -143,7 +169,11 @@
                     </p>
                 </div>
                 <div class="whatsapp flex flex-col  bg-white shadow-md p-6 lg-p-8  xl:p-10 rounded-2xl ">
-                    <p class="text-xl font-medium mb-5 text-Text">الهاتف</p>
+                    <p class="text-xl font-medium mb-5 text-Text">
+
+                        {{
+                            locale === 'ar' ? 'الهاتف' : 'phone' }}
+                    </p>
                     <p class="text-secondParagraph text-lg md:text-base">
                         <a href="https://wa.me/966502904556" target="_blank"
                             class="cursor-pointer duration-200 ease-in-out text-paragraph">
@@ -152,7 +182,12 @@
                     </p>
                 </div>
                 <div class="flex flex-col  bg-white shadow-md p-6 lg-p-8  xl:p-10 rounded-2xl">
-                    <p class="text-xl font-medium mb-5 text-Text">مواقع التواصل الإجتماعي</p>
+                    <p class="text-xl font-medium mb-5 text-Text">
+
+                        {{
+                            locale === 'ar' ? 'مواقع التواصل الإجتماعي' : 'social media sites' }}
+
+                    </p>
                     <div class="flex flex-wrap gap-3 md:gap-4">
                         <div class="flex h-10 w-10 items-center justify-center rounded-full border border-[#7B7B7B] group cursor-pointer hover:border-[#474747] transition-all duration-200 ease-in-out "
                             v-for="social in SocialMedia" :key="social.id">
@@ -165,9 +200,22 @@
                     </div>
                 </div>
                 <div class="posta flex flex-col  bg-white shadow-md p-6 lg-p-8  xl:p-10 rounded-2xl">
-                    <p class="text-xl font-medium mb-5 text-Text ">البريد</p>
-                    <p class="text-lg font-medium  text-paragraph ">ص.ب: 7613</p>
-                    <p class="text-lg font-medium  text-paragraph ">الرمز البريدي: 21472</p>
+                    <p class="text-xl font-medium mb-5 text-Text "> {{
+                        locale === 'ar' ? 'البريد' : 'mail' }}</p>
+                    <p class="text-lg font-medium  text-paragraph ">
+
+
+                        {{ locale === 'ar' ? 'ص.ب' : 'P.O. Box' }}
+
+                        :7613
+
+                    </p>
+                    <p class="text-lg font-medium  text-paragraph ">
+
+                        {{ locale === 'ar' ? 'الرمز البريدي' : 'zip code' }}
+
+                        :21472
+                    </p>
                 </div>
             </div>
         </section>
@@ -175,7 +223,7 @@
         <section class="mapSection max-w-[995px] mx-auto max-2xl:px-6">
 
 
-            <TitleSection title="أين تجدنا" />
+            <TitleSection title="contact.map" />
             <div>
                 <img src="~/assets/img/Contact/map.svg" alt="map" class="max-lg:w-full" loading="lazy" width="995"
                     height="976">

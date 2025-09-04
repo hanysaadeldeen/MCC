@@ -1,7 +1,7 @@
 <template>
     <section class="HomeClientsSection bg-[#E9F1FC] py-20 max-xl:px-6" :dir="locale === 'ar' ? 'rtl' : 'ltr'">
         <div class="max-w-[1392px] mx-auto">
-            <TitleSection title="عملاؤنا الكرام" />
+            <TitleSection title="home.featuredClients.title" />
             <Swiper :loop="true" :autoplay="{
                 delay: 0,
                 disableOnInteraction: false
@@ -28,13 +28,9 @@
                     class="flex justify-center items-center px-3 py-2 md:py-4 md:px-6 bg-white shadow rounded-xl">
                     <img :src="client.img" :alt="client.alt" :key="client.id" width="282" height="116">
                 </swiper-slide>
-
             </Swiper>
-
-
-            <button-more title=" تعرف على كافة العملاء" link="/projects" />
+            <button-more title="home.featuredClients.btn" link="/projects" />
         </div>
-
     </section>
 </template>
 

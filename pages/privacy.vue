@@ -1,7 +1,6 @@
 <template>
     <section class="privacy  relative " :dir="locale === 'ar' ? 'rtl' : 'ltr'">
-        <HeroSection title="سياسة الخصوصية لشركة MCC"
-            description="تلتزم شركة المواد الكيميائية والميكانيكية المحدودة (MCC) بحماية خصوصية زوار موقعنا. توضح هذه السياسة كيفية جمعنا، واستخدامنا، وحمايتنا لمعلوماتك الشخصية." />
+        <HeroSection title="privacy.heroSection.title" description="privacy.heroSection.paragraph" />
 
 
 

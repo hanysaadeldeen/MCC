@@ -1,6 +1,6 @@
 <template>
     <section id="BrandSection" class="BrandSection relative w-full ">
-        <div class="blob  "></div>
+        <div class="blob "></div>
         <Vue3Marquee duration="100" :direction="locale === 'ar' ? 'reverse' : ''">
             <img v-for="brand in Brands" :src="brand.img" :alt="brand.alt" :key="brand.id" class="mx-3" width="164"
                 height="68" />

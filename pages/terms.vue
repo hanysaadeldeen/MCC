@@ -1,7 +1,7 @@
 <template>
     <section class="terms relative " :dir="locale === 'ar' ? 'rtl' : 'ltr'">
-        <HeroSection title="الشروط والأحكام لشركة MCC"
-            description="يرجى قراءة هذه الشروط والأحكام بعناية قبل استخدام موقعنا الإلكتروني. يعتبر استخدامك للموقع موافقة منك على الالتزام بهذه الشروط." />
+
+        <HeroSection title="terms.heroSection.title" description="terms.heroSection.paragraph" />
 
         <div class="relative z-20 max-w-[1392px] mx-auto">
             <div class="relative container max-sm:px-4 mx-auto px-2">

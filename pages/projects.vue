@@ -1,13 +1,10 @@
 <template>
     <main :dir="locale === 'ar' ? 'rtl' : 'ltr'" class="">
-        <HeroSection title="شركاء النجاح: ثقة أكبر الأسماء في المملكة"
-            description="تعتبر MCC شريكًا موثوقًا للعديد من المشاريع الهندسية والإنشائية الرائدة في المملكة العربية السعودية ودول مجلس التعاون الخليجي، وقد ساهمنا في توريد منتجاتنا لمشاريع كبرى حكومية وخاصة (MCC) هي إحدى أبرز موزعي المنتجات الكهروميكانيكية في المملكة العربية السعودية ودول مجلس التعاون الخليجي، بخبرة تزيد عن 45 عامًا" />
-
+        <HeroSection title="projects.heroSection.title" description="projects.heroSection.paragraph" />
         <ProjectsImagesSection />
         <ProjectsBrandsSection />
-        <CTASection title="انضم إلى قائمة شركاء النجاح,تواصل معنا اليوم"
-            description="نوفر لك حلولاً متكاملة مع منتجات فائقة الجودة، وفريقنا على أهبة الاستعداد لخدمتك في أي وقت"
-            btnTitle="اطلب عرض سعر الآن !" />
+        <CTASection title="projects.cta.title" description="projects.cta.paragraph" btnTitle="projects.cta.btn"
+            link="/contact" />
     </main>
 </template>
 

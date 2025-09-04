@@ -1,18 +1,13 @@
 <template>
-    <main :dir="locale === 'ar' ? 'rtl' : 'ltr'" class="">
-        <HeroSection title="مسيرة النجاح: أكثر من 45 عامًا من الريادة"
-            description="شركة التوريدات الميكانيكية والكيماوية المحدودة (MCC) هي إحدى أبرز موزعي المنتجات الكهروميكانيكية في المملكة العربية السعودية ودول مجلس التعاون الخليجي، بخبرة تزيد عن 45 عامًا" />
-
-
+    <main :dir="locale === 'ar' ? 'rtl' : 'ltr'" class="overflow-hidden">
+        <HeroSection title="about.heroSection.title" description="about.heroSection.paragraph" />
         <CompanyHistory />
         <OurNumbersSection />
         <CertificatesSection />
         <VisionAndMission />
         <ValuesSection />
-
-        <CTASection title="التزامًا بالجودة، نحن مستعدون لدعم مشروعك."
-            description="نوفر لك حلولاً متكاملة مع منتجات فائقة الجودة، وفريقنا على أهبة الاستعداد لخدمتك في أي وقت"
-            btnTitle="تواصل معنا الآن !" />
+        <CTASection title="about.cta.title" description="about.cta.paragraph" btnTitle="about.cta.btn"
+            link="/contact" />
     </main>
 </template>
 

@@ -1,7 +1,7 @@
 <template>
-    <section class="SuppliersBrandsSection">
+    <section class="BrandsSection">
         <div class="max-w-[1392px] mx-auto max-xl:px-6">
-            <TitleSection title="ثقة عمالقة الصناعة: قائمة عملائنا المعتمدين" />
+            <TitleSection title="projects.clientsTitle" />
 
 
             <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 lg:gap-6">

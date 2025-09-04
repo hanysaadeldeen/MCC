@@ -1,7 +1,7 @@
 <template>
     <section class="ProductsSection max-xl:px-6" :dir="locale === 'ar' ? 'rtl' : 'ltr'">
         <div class="max-w-[1392px] mx-auto">
-            <TitleSection title="مجالات منتجاتنا" />
+            <TitleSection title="products.productTitle" />
 
             <!--  grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4-->
             <div class=" flex flex-wrap  max-2xl:justify-center  justify-start gap-4 lg:gap-6">
@@ -11,7 +11,7 @@
                     '
                     ">
                         <h1 class="text-white text-base md:text-xl lg:text-2xl font-bold">{{ $t(product.title) }}</h1>
-                        <div class="mt-3 md:mt-6">
+                        <div class="mt-3 md:mt-6" v-if="product.brands.length > 0">
                             <p class="text-white font-medium text-base md:text-lg">
                                 {{ locale === 'ar' ? "العلامات التجارية" :
                                     "Brands" }}:</p>
@@ -101,6 +101,7 @@ import MCC from "../../assets/img/ProductsBrand/MCC.svg"
 import viking from "../../assets/img/ProductsBrand/viking-52 1.svg"
 import HUWA from "../../assets/img/ProductsBrand/HUWA-22 1.svg"
 import ELKAY from "../../assets/img/ProductsBrand/ELKAY-11 1.svg"
+import ao from "../../assets/img/ProductsBrand/ao-03 12.svg"
 
 
 
@@ -126,8 +127,7 @@ const Products = [
     },
     {
         id: 4, img: DUCTILEPIPES, alt: "DUCTILE PIPES", title: "products.DUCTILEPIPES",
-        brands: [
-        ]
+        brands: []
     },
     {
         id: 5, img: SANITARYFIXTURES, alt: "SANITARY FIXTURES", title: "products.SANITARYFIXTURES",
@@ -168,7 +168,7 @@ const Products = [
     {
         id: 11, img: PETROLEUMANDGAS, alt: "PETROLEUM AND GAS", title: "products.PETROLEUMANDGAS",
         brands: [
-            HIGHLAND, HOROBIN
+            HIGHLAND
         ]
     },
     {
@@ -186,7 +186,7 @@ const Products = [
     {
         id: 14, img: COPPERPIPES, alt: "COPPER PIPES", title: "products.COPPERPIPES",
         brands: [
-            PEGLER, ALLPEX, MUELLER, ALIIANG
+            PEGLER, ALLPEX, MUELLER, ALIIANG, nibco
         ]
     },
     {
@@ -204,7 +204,7 @@ const Products = [
     {
         id: 17, img: ELECTRICWATER, alt: "ELECTRIC WATER", title: "products.ELECTRICWATER",
         brands: [
-            SMITH
+            ao
         ]
     },
     {

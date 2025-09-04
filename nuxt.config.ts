@@ -11,11 +11,11 @@ export default defineNuxtConfig({
     },
   ],
   i18n: {
-    defaultLocale: "ar",
+    defaultLocale: "en",
     strategy: "prefix_except_default",
     locales: [
-      { code: "ar", name: "Arabic", file: "ar.json" },
       { code: "en", name: "English", file: "en.json" },
+      { code: "ar", name: "Arabic", file: "ar.json" },
     ],
     detectBrowserLanguage: false,
   },

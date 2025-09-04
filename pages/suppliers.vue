@@ -1,9 +1,7 @@
 <template>
     <main :dir="locale === 'ar' ? 'rtl' : 'ltr'">
-        <HeroSection title=" شركاء التوريد: علامات تجارية موثوقة"
-            description="   شركاؤك
-                    تلتزم شركة MCC بتقديم مجموعة كاملة من المنتجات من أكبر المصنعين العالميين والمحليين. نفخر بشراكاتنا
-                    مع هذه العلامات التجارية الموثوقة، والتي تضمن حصول عملائنا على أفضل المنتجات ذات الجودة العالية." />
+
+        <HeroSection title="suppliers.heroSection.title" description="suppliers.heroSection.paragraph" />
 
         <SuppliersBrandsSection />
 

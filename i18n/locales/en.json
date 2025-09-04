@@ -1,5 +1,199 @@
 {
+  "header": {
+    "home": "Home",
+    "about": "About Us",
+    "projects": "Projects",
+    "suppliers": "suppliers",
+    "products": "Products",
+    "contact": "Contact Us",
+    "privacy": "Privacy",
+    "terms": "Terms "
+  },
+  "home": {
+    "heroSection": {
+      "title": "Your Trusted Partner in Supplies",
+      "paragraph": "Delivering premium-quality materials for your projects, backed by over 45 years of expertise.",
+      "btn": "Explore Our Products"
+    },
+    "aboutUsSection": "As a distributor of top-tier products from leading manufacturers, we ensure your projects are completed to the highest standards of reliability and quality.",
+    "numbersAchieved": {
+      "title": "Numbers We've Achieved",
+      "projects": {
+        "number": "+5000",
+        "title": "Implemented Projects"
+      },
+      "clients": {
+        "number": "+1000",
+        "title": " Satisfied Clients"
+      },
+      "products": {
+        "number": "1+ Billion",
+        "title": " Supplied Products"
+      }
+    },
+    "bestProjects": {
+      "title": "Featured Projects We've Supplied",
+      "btn": "View All Projects"
+    },
+    "featuredClients": {
+      "title": "Featured Clients",
+      "btn": "View All Clients"
+    },
+    "productRange": {
+      "title": "Product Range",
+      "btn": "Explore Full Range"
+    },
+    "cta": {
+      "title": "Partner with MCC: For Your Project's Success",
+      "paragraph": "Your dedicated partners, turning your vision into reality with reliable materials and unwavering expertise.",
+      "btn": "Start Your Partnership Now"
+    }
+  },
+  "about": {
+    "heroSection": {
+      "title": "A Legacy of Success: Over 45 Years of Leadership",
+      "paragraph": "Mechanical & Chemical Supplies Co. Ltd. (MCC) is a premier distributor of electromechanical products in Saudi Arabia and the GCC, with a legacy of excellence spanning over four decades."
+    },
+    "history": {
+      "title": "Our History of Achievements",
+      "one": {
+        "title": "Company Foundation",
+        "paragraph": "Established by Mohammed Y. Al-Hamouri as a key supplier of mechanical and chemical materials in Saudi Arabia."
+      },
+      "two": {
+        "title": "Growth Phase",
+        "paragraph": "Rapid expansion during the Kingdom’s economic and industrial boom, contributing to major national projects."
+      },
+      "three": {
+        "title": "Kingdom-wide Expansion",
+        "paragraph": "Opened branches in Jeddah, Riyadh, and Al Khobar to strengthen our nationwide presence."
+      },
+      "four": {
+        "title": "A Legacy of Leadership",
+        "paragraph": "Over 45 years of delivering trusted solutions to both government and private sector projects."
+      }
+    },
+    "numbersAchieved": {
+      "title": "Numbers We've Achieved",
+      "projects": {
+        "number": "+5000",
+        "title": "Implemented Projects"
+      },
+      "clients": {
+        "number": "+1000",
+        "title": " Satisfied Clients"
+      },
+      "products": {
+        "number": "1+ Billion",
+        "title": " Supplied Products"
+      }
+    },
+    "certifications": {
+      "title": "Our Commitment to Global Quality: International Certifications",
+      "iso2018": "Occupational Health & Safety Management Systems",
+      "iso142015": "Environmental Management Systems",
+      "iso92015": "Quality Management Systems",
+      "btn": "View Full Certificate"
+    },
+    "visionAndMission": {
+      "title": "Our Vision and Mission",
+      "vision": {
+        "title": "Our Vision",
+        "paragraph": "We strive to be the leading company in plumbing solutions within the Kingdom, providing exceptional quality and high performance based on ideal and innovative principles."
+      },
+      "mission": {
+        "title": "Our Mission",
+        "paragraph": "We aim to be pioneers in our sector, contributing to our country's vision by developing the workforce and promoting the globalization of the industry."
+      }
+    },
+    "values": {
+      "title": "Our Values: The Foundation of Sustainable Growth",
+      "one": {
+        "title": "Integrity",
+        "paragraph": "Integrity is the cornerstone of all our operations. We are committed to honesty and complete transparency in every interaction and agreement."
+      },
+      "two": {
+        "title": "Quality",
+        "paragraph": "We continuously strive to meet our clients’ needs with the highest standards. Quality is at the core of everything we do."
+      },
+      "three": {
+        "title": "Reliability",
+        "paragraph": "We provide professional, diverse, and highly trained teams to ensure dependable and consistent service at every project stage."
+      },
+      "four": {
+        "title": "Efficiency",
+        "paragraph": "We value time, delivering our services within set timelines with both speed and accuracy."
+      },
+      "five": {
+        "title": "Collaboration",
+        "paragraph": "We believe mutual respect and open communication are the keys to success. We work as one team, building strong relationships with our clients and partners."
+      },
+      "six": {
+        "title": "Accountability",
+        "paragraph": "We take full responsibility for the quality and outcomes of our services, aiming for excellence and the best possible results."
+      }
+    },
+    "cta": {
+      "title": "Committed to Quality, Ready to Support Your Project",
+      "paragraph": "We provide integrated solutions with premium-quality products, backed by a dedicated team always ready to serve you.",
+      "btn": "Contact Us Now"
+    }
+  },
+  "suppliers": {
+    "heroSection": {
+      "title": "Supply Partners: Trusted Brands",
+      "paragraph": "At MCC, we are committed to delivering a comprehensive range of products from leading global and local manufacturers. We take pride in our partnerships with these trusted brands, ensuring our clients receive only the highest-quality products."
+    },
+    "cta": {
+      "title": "Our Products Are Sourced from the World's Best Manufacturers. ",
+      "paragraph": "Explore our complete range of products and start building your project with the finest materials.",
+      "btn": "Explore Our Products"
+    }
+  },
+  "projects": {
+    "heroSection": {
+      "title": "Partners in Success: Trusted by the Kingdom’s Leading Names",
+      "paragraph": "MCC is a trusted partner for major engineering and construction projects across Saudi Arabia and the GCC. We have proudly supplied our products to landmark government and private sector initiatives."
+    },
+    "projectsTitle": "Building the Future Together: Our Landmark Projects",
+    "clientsTitle": "Trusted by Industry Leaders: Our Valued Clients",
+    "projectsImg": {
+      "kingAbdullahUniversity": "King Abdullah University of Science & Technology (KAUST) Project",
+      "kingAbdulazizInternationalAirport": "King Abdullah University of Science & Technology (KAUST) Project",
+      "KingKhalidInternationalAirport": "King Abdullah University of Science & Technology (KAUST) Project",
+      "KingAbdullahEconomicCity": "King Abdullah Economic City (KAEC) Project",
+      "KingAbdullahFinancialDistrict": "King Abdullah Financial District (KAFD) Project",
+      "NEOMProject": "NEOM Project (OXAGON, SINDALAH, TROJENA)",
+      "JabalOmarDevelopment": "Jabal Omar Development (JODP) Project",
+      "KingAbdulazizEndowment": "King Abdulaziz Endowment Project",
+      "AMAALAProject": "AMAALA Project",
+      "KingSalmanPark": "King Salman Park (KSP) Project",
+      "KingSaudUniversity": "King Saud University (KSU) Project",
+      "RedSeaProject": "Red Sea Project",
+      "ALULAProject": "ALULA Project",
+      "MASAARProject": "MASAAR Project",
+      "QiddiyahProject": "Qiddiyah Project",
+      "AmazonProject": "Amazon Project",
+      "DiriyahGate": "Diriyah Gate Project",
+      "MakkahClockTower": "Makkah Clock Tower Project"
+    },
+    "cta": {
+      "title": "Join Our Success Partners – Get in Touch Today",
+      "paragraph": "We provide integrated solutions with premium-quality products, backed by a dedicated team always ready to serve you.",
+      "btn": "Request a Quote Now"
+    }
+  },
   "products": {
+    "heroSection": {
+      "title": "Our Products: Comprehensive Solutions with Global Standards",
+      "paragraph": "MCC offers a complete range of electromechanical and chemical products, providing solutions for diverse needs in construction and industrial projects. Our portfolio features trusted products from leading global and local brands."
+    },
+    "productTitle": "MCC PRODUCT RANGE",
+    "cta": {
+      "title": "Our Full Product Range at Your Service",
+      "paragraph": "Get in touch with our sales team for a technical consultation or a customized quote.",
+      "btn": "Contact Us Now"
+    },
     "CASTIRONPIPES": "CAST IRON PIPES & FITTINGS",
     "PVCCEMENT": "PVC CEMENT",
     "DRAINAGESYSTEM": "DRAINAGE SYSTEMS",
@@ -22,71 +216,45 @@
     "MECHANICALR": "MECHANICAL & REPAIR COUPLING",
     "WATERFOUNTAINS": " WATER FOUNTAIN COOLERS, SINKS"
   },
+  "contact": {
+    "heroSection": {
+      "title": "Get in Touch with Our Expert Team",
+      "paragraph": "We are here to provide technical support, answer all your inquiries, and help you choose the best solutions for your project — backed by over 45 years of expertise.",
+      "btn": "Send"
+    },
+    "map": "Where to find us"
+  },
   "privacy": {
     "heroSection": {
-      "title": "Privacy Policy  HealthyGo369",
-      "description": "At HealthyGo369, we respect your privacy and are committed to protecting the personal information you share with us. This policy explains how we collect, use, and protect the data you provide through our website."
-    },
-    "CTA": {
-      "title": "You Care About The Details — Now Your Next Step Is Up To You.",
-      "buttonOne": "Return To Homepage",
-      "buttonTwo": "Explore Our Solutions"
+      "title": "MCC Privacy Policy",
+      "paragraph": "Mechanical & Chemical Supplies Co. (MCC) is committed to protecting the privacy of our website visitors. This policy explains how we collect, use, and safeguard your personal information."
     },
     "sectionOne": {
       "title": "1. Information We Collect",
-      "description": "When you fill out a subscription form or contact us, we may ask you to provide personal information such as:",
       "data": {
-        "itemOne": "Full Name",
-        "itemTwo": "Phone Number",
-        "itemThree": "Email"
+        "itemOne": "Contact Information: When you send us a message through the website, we collect your name, phone number, and email address.",
+        "itemTwo": "Technical Data: We may collect non-personal information such as your IP address, browser type, and pages visited, to help us improve the user experience."
       }
     },
     "sectionTwo": {
       "title": "2. How We Use Your Information",
       "description": "We use the information we collect for the following purposes:",
       "data": {
-        "itemOne": "To Contact You: We use your name and phone number to contact you regarding your subscription inquiry, explain service details, and finalize the subscription process for our healthy meal delivery service.",
-        "itemTwo": "To Provide Our Services: After subscription, we may use your information to manage your account, deliver orders, and provide necessary support."
+        "itemOne": "To Communicate with You: We use your contact details to respond to your inquiries, provide quotations, and share information about our products and services.",
+        "itemTwo": "To Improve Our Services: Technical data helps us understand how visitors use our website, enabling us to enhance its design and content."
       }
     },
     "sectionThree": {
       "title": "3. Information Sharing",
-      "description": "We do not sell, trade, or rent your personal information to third parties. We may share your information only in the following limited circumstances:",
-      "data": {
-        "itemOne": "Service Providers: We may work with third-party companies or individuals to perform services on our behalf, such as website hosting, data analysis, or communication services. These parties are granted access to your personal information only to the extent necessary to perform their functions and are obligated not to disclose or use it for any other purpose.",
-        "itemTwo": "Legal Requirements: We may disclose your personal information if required by law or in response to valid court orders, to comply with a legal process, or to protect our rights, property, or the safety of our users."
-      }
+      "description": "We do not sell, rent, or share your personal information with third parties for direct marketing purposes. We may only share it with trusted partners to deliver the services you requested, such as processing or shipping your order, while ensuring they adhere to the same privacy standards."
     },
     "sectionFour": {
-      "title": "4. Cookies",
-      "description": "Our website uses cookies to enhance your experience. Cookies are small text files stored on your computer or mobile device when you visit a website. We use them for the following purposes:",
-      "data": {
-        "itemOne": "Website Functionality: To ensure the website works correctly and remembers your preferences.",
-        "itemTwo": "Website Analytics: To gather information about how visitors use our website (e.g., most visited pages) with the aim of improving site performance and content. You can control cookies through your browser settings. Disabling cookies may affect certain functionalities of the website."
-      }
+      "title": "4. Protecting Your Information  ",
+      "description": "We take all necessary security measures to protect your personal data from unauthorized access, alteration, or disclosure. Your information is stored on secure servers and can only be accessed by authorized personnel."
     },
     "sectionFive": {
-      "title": "5. Protecting Your Information",
-      "description": "We implement reasonable security measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction. However, no data transmission over the internet or electronic storage method is 100% secure. Therefore, we cannot guarantee its absolute security."
-    },
-    "sectionSix": {
-      "title": "6. Your Rights",
-      "description": "You have the right to:",
-      "data": {
-        "itemOne": "Access Your Information: Request a copy of the personal information we hold about you.",
-        "itemTwo": "Correct Your Information: Request the correction of any inaccurate or incomplete information."
-      }
-    },
-    "sectionSeven": {
-      "title": "7. Changes to This Privacy Policy",
-      "description": "We may update this Privacy Policy from time to time. Any changes will be posted on this page, and the Effective Date at the top will be updated. You are advised to review this Privacy Policy periodically for any changes. Your continued use of the website after changes are posted constitutes your acceptance of those changes."
-    },
-    "sectionEight": {
-      "title": "8. Contact Us",
-      "description": "If you have any questions or concerns about this Privacy Policy, please contact us via:",
-      "data": {
-        "itemOne": "Phone Number: +966 54757985"
-      }
+      "title": "5. Your Rights",
+      "description": "You have the right at any time to review, correct, or request the deletion of the information we have collected about you. You can do so by contacting us at: "
     }
   },
   "terms": {

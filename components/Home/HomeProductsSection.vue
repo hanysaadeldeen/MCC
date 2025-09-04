@@ -1,7 +1,7 @@
 <template>
     <section class="HomeProductsSection max-xl:px-6" :dir="locale === 'ar' ? 'rtl' : 'ltr'">
         <div class="max-w-[1392px] mx-auto">
-            <TitleSection title="مجالات منتجاتنا" />
+            <TitleSection title="home.productRange.title" />
             <Swiper :breakpoints="{
                 320: {
                     slidesPerView: 1,
@@ -29,13 +29,14 @@
                 <swiper-slide v-for="product in Products" class=" rounded-xl   h-full">
                     <div class="relative group cursor-pointer  sm:mx-auto sm:max-w-[330px] h-full ">
                         <div class="w-full sm:mx-auto sm:max-w-[330px] max-h-[500px]  rounded-2xl relative">
-                            <img :src="product.img" :alt="product.alt" :key="product.id" width="330" height="380"
+                            <img :src="product.img" :alt="$t(product.title)" :key="product.id" width="330" height="380"
                                 class="object-fill h-full w-full max-h-[500px] rounded-2xl">
                             <div
                                 class="absolute top-0 left-0 w-full h-full bg-[#16498EE5]  rounded-2xl p-6 opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300'">
-                                <h1 class="text-white text-base md:text-xl lg:text-2xl font-bold">{{ $t(product.alt) }}
+                                <h1 class="text-white text-base md:text-xl lg:text-2xl font-bold">{{ $t(product.title)
+                                    }}
                                 </h1>
-                                <div class="mt-3 md:mt-6">
+                                <div class="mt-3 md:mt-6" v-if="product.brands.length > 0">
                                     <p class="text-white font-medium text-base md:text-lg">
                                         {{ locale === 'ar' ? "العلامات التجارية" :
                                             "Brands" }}:</p>
@@ -53,7 +54,7 @@
 
             </Swiper>
 
-            <button-more title=" تصفح كافة المجالات" link="/products" />
+            <button-more title="home.productRange.btn" link="/products" />
 
         </div>
 
@@ -79,7 +80,6 @@ import WATERTREATMENT from '../../assets/img/Utils/Products/WATER TREATMENT.svg'
 import PRESSURETANKS from '../../assets/img/Utils/Products/PRESSURE TANKS.svg';
 import RUBBERANDFIBER from '../../assets/img/Utils/Products/RUBBER AND FIBERS  INSULATION.svg';
 import NEUTRALIZATIONTANKS from '../../assets/img/Utils/Products/NEUTRALIZATION TANKS.svg';
-import TESTPLUGS from '../../assets/img/Utils/Products/TEST PLUGS.webp';
 import PETROLEUMANDGAS from '../../assets/img/Utils/Products/PETROLEUM AND  CHEMICAL STORAGE TANKS.svg';
 import SOLDERINGROD from '../../assets/img/Utils/Products/SOLDERING ROD.svg'
 

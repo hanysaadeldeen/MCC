@@ -5,35 +5,48 @@
             <div class="relative z-40">
                 <div class="flex items-center justify-between ">
                     <nuxt-link :to="localePath('index')" class="block relative ">
-                        <img src="~/assets/img/Utils/Logo.svg" class="h-[50px] w-fit  xl:h-[70px] relative " alt="Mcc"
-                            height="70px" width="290" loading="eager" fetchpriority="high" />
+                        <img src="~/assets/img/Utils/Logo.svg" :class="locale === 'ar' ? '' : 'hidden'"
+                            class="h-[50px] w-fit  xl:h-[70px] relative " alt="Mcc" height="70px" width="290"
+                            loading="eager" fetchpriority="high" />
+                        <img src="~/assets/img/Utils/LogoEn.svg" :class="locale === 'ar' ? 'hidden' : ''"
+                            class="h-[50px] w-fit  xl:h-[70px] relative " alt="Mcc" height="70px" width="290"
+                            loading="eager" fetchpriority="high" />
                     </nuxt-link>
                     <div class="flex items-center justify-between gap-6">
                         <nav class="relative hidden lg:block h-full ">
                             <ul class="flex  items-center">
                                 <li :class="adjustedPath === '/' ? 'active' : ''">
                                     <nuxt-link :to="localePath('index')">
-                                        الرئيسية
+                                        {{ $t("header.home") }}
                                     </nuxt-link>
                                 </li>
                                 <li :class="adjustedPath === '/company' ? 'active' : ''">
                                     <nuxt-link :to="localePath('company')">
-                                        الشركة
+
+                                        {{ $t("header.about") }}
+
                                     </nuxt-link>
                                 </li>
                                 <li :class="adjustedPath === '/projects' ? 'active' : ''">
                                     <nuxt-link :to="localePath('projects')">
-                                        العملاء والمشاريع
+
+                                        {{ $t("header.projects") }}
+
+
                                     </nuxt-link>
                                 </li>
                                 <li :class="adjustedPath === '/suppliers' ? 'active' : ''">
                                     <nuxt-link :to="localePath('suppliers')">
-                                        الموردين
+
+                                        {{ $t("header.suppliers") }}
+
+
                                     </nuxt-link>
                                 </li>
                                 <li :class="adjustedPath.includes('/products') ? 'active' : ''">
                                     <nuxt-link :to="localePath('products')">
-                                        فئات المنتجات
+
+                                        {{ $t("header.products") }}
                                     </nuxt-link>
                                 </li>
                             </ul>
@@ -41,7 +54,7 @@
                         <div class="hidden  justify-between  lg:flex items-center gap-2 xl:gap-6">
                             <LanguageSwitcher />
                             <nuxt-link :to="localePath('contactUs')">
-                                <Button title="تواصل معنا" />
+                                <Button title="header.contact" />
                             </nuxt-link>
                         </div>
                     </div>
@@ -69,7 +82,8 @@
                                     'text-white hover:text-PrimaryPL3',
                                 ]">
                                     <nuxt-link :to="localePath('index')" @click="isSideBar = !isSideBar" class="w-full">
-                                        الرئيسية
+                                        {{ $t("header.home") }}
+
                                     </nuxt-link>
                                 </li>
                                 <li :class="[
@@ -78,7 +92,8 @@
                                 ]">
                                     <nuxt-link :to="localePath('company')" @click="isSideBar = !isSideBar"
                                         class="w-full">
-                                        الشركة
+                                        {{ $t("header.about") }}
+
                                     </nuxt-link>
                                 </li>
                                 <li :class="[
@@ -87,7 +102,8 @@
                                 ]">
                                     <nuxt-link :to="localePath('projects')" @click="isSideBar = !isSideBar"
                                         class="w-full">
-                                        العملاء والمشاريع
+                                        {{ $t("header.projects") }}
+
                                     </nuxt-link>
                                 </li>
                                 <li :class="[
@@ -96,7 +112,8 @@
                                 ]">
                                     <nuxt-link :to="localePath('suppliers')" @click="isSideBar = !isSideBar"
                                         class="w-full">
-                                        الموردين
+                                        {{ $t("header.suppliers") }}
+
                                     </nuxt-link>
                                 </li>
                                 <li :class="[
@@ -105,16 +122,7 @@
                                 ]">
                                     <nuxt-link :to="localePath('products')" @click="isSideBar = !isSideBar"
                                         class="w-full">
-                                        فئات المنتجات
-                                    </nuxt-link>
-                                </li>
-                                <li :class="[
-                                    adjustedPath === '/contactUs' ? 'active' : '',
-                                    'text-white hover:text-PrimaryPL3',
-                                ]">
-                                    <nuxt-link :to="localePath('contactUs')" @click="isSideBar = !isSideBar"
-                                        class="w-full">
-                                        تواصل معنا
+                                        {{ $t("header.products") }}
                                     </nuxt-link>
                                 </li>
                             </ul>
@@ -122,7 +130,7 @@
                         <div class="mt-5 justify-between flex-col ">
                             <LanguageSwitcher isWhite />
                             <nuxt-link :to="localePath('contact')" class="mt-6 relative block">
-                                <Button title="تواصل معنا" />
+                                <Button title="header.contact" />
                             </nuxt-link>
                         </div>
                     </div>
