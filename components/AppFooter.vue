@@ -2,11 +2,11 @@
 
     <footer class="relative bg-[#030B16] w-full rounded-t-2xl pt-14 md:pt-36 pb-14 overflow-hidden"
         :dir="locale === 'ar' ? 'rtl' : 'ltr'">
-        <div class="absolute left-0 max-md:top-0 bottom-0 z-10">
-            <img src="~/assets/img/Utils/footerPattern.svg" alt="footerPattern">
+        <div class="absolute left-14 max-lg:top-0 bottom-0 z-10 lg:h-full ">
+            <img src="~/assets/img/Utils/footerPattern.svg" class="lg:object-fill lg:h-full" alt="footerPattern">
         </div>
-        <div class="absolute right-0 bottom-0 z-10">
-            <img src="~/assets/img/Utils/footerPattern.svg" alt="footerPattern">
+        <div class="absolute right-14 bottom-0 z-10 lg:h-full">
+            <img src="~/assets/img/Utils/footerPattern.svg" class="lg:object-fill lg:h-full" alt="footerPattern">
         </div>
         <div
             class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-between gap-6 md:gap-10 lg:gap-20 max-w-[1392px] mx-auto pb-14 md:pb-[72px] max-2xl:px-6 relative z-[25]">
@@ -130,7 +130,11 @@ const adjustedPath = computed(() => getPathWithoutLocale(route.path));
 
 <style scoped>
 nav ul li {
-    @apply text-[#999999] text-base font-medium py-4 border-b border-[#999999] w-full hover:text-white transition-all ease-in-out duration-300 cursor-pointer hover:border-white
+    @apply text-[#999999] text-base font-medium py-4 border-b w-full hover:text-white transition-all ease-in-out duration-300 cursor-pointer hover:border-white
+}
+
+nav ul li {
+    border-color: rgba(255, 255, 255, 0.2);
 }
 
 nav ul li.active {

@@ -24,7 +24,7 @@
             </div>
             <div class="hidden xl:block w-full xl:w-1/2 xl:max-w-[954px] max-w-[954px] max-h-[740px] relative">
 
-                <Swiper :modules="[Autoplay]" :loop="true" :slides-per-view="'auto'" :free-mode="true" :speed="6000"
+                <Swiper :modules="[Autoplay]" :loop="true" :free-mode="true" :speed="6000" :slides-per-view="'auto'"
                     :autoplay="{
                         delay: 1,
                         disableOnInteraction: false,

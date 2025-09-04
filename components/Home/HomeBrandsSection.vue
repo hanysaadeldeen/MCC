@@ -1,5 +1,6 @@
 <template>
-    <section id="BrandSection" class="BrandSection bg-[#E9F1FC]">
+    <section id="BrandSection" class="BrandSection relative w-full ">
+        <div class="blob  "></div>
         <Vue3Marquee duration="100" :direction="locale === 'ar' ? 'reverse' : ''">
             <img v-for="brand in Brands" :src="brand.img" :alt="brand.alt" :key="brand.id" class="mx-3" width="164"
                 height="68" />
@@ -108,4 +109,15 @@ const Brands = [
 
 </script>
 
-<style scoped></style>
+<style scoped>
+.blob {
+    position: absolute;
+    background-color: #E9F1FC;
+    width: 100%;
+    height: 100px;
+    top: -15px;
+    left: 0;
+    filter: blur(20px);
+    opacity: 0.9;
+}
+</style>

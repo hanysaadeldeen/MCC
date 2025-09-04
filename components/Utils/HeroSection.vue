@@ -24,7 +24,7 @@ defineProps<{
 </script>
 
 <style scoped>
-.SuppliersHeroSection {
+.HeroSection {
     background-image: url("../../assets/img/Utils/HomeHeroPattern.svg");
     background-position: center;
     background-size: contain;

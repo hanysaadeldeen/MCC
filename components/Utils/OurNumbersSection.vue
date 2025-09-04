@@ -20,7 +20,8 @@
 
 
             <div class="relative md:px-10">
-                <div class="max-md:hidden absolute right-0 top-1/2 -translate-y-1/2 bg-[#666666] w-[0.5px] h-[100px]">
+                <div
+                    class="max-md:hidden absolute right-0 top-1/2 -translate-y-1/2 bg-[#666666] w-[0.5px] h-[100px] opacity-50">
                 </div>
                 <div class="flex gap-6 sm:py-4 sm:px-6 items-center">
                     <img src="~/assets/img/Home/Numbers/Client.svg" alt="Project.svg" loading="lazy"
@@ -32,7 +33,8 @@
                         <p class="text-paragraph text-base md:text-lg font-bold ">عميل راضي</p>
                     </div>
                 </div>
-                <div class="max-md:hidden absolute left-0 top-1/2 -translate-y-1/2 bg-[#666666] w-[0.5px] h-[100px]">
+                <div
+                    class="max-md:hidden absolute left-0 top-1/2 -translate-y-1/2 bg-[#666666] w-[0.5px] h-[100px] opacity-50">
                 </div>
             </div>
             <div class="relative md:pr-10">

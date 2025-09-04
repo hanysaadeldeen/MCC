@@ -6,7 +6,7 @@
                 <div class="item px-4 md:px-6 py-8 md:py-14 lg:py-[74px] bg-white" v-for="value in ValuesSection">
                     <h1 class="text-2xl lg:text-3xl font-medium text-Text mb-4">{{ value.title }}</h1>
                     <p class="text-lg lg:text-xl font-medium text-paragraph w-full md:max-w-[384px]">{{ value.paragraph
-                    }}</p>
+                        }}</p>
                 </div>
             </div>
         </div>
