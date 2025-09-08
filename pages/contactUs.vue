@@ -29,7 +29,7 @@
                                     locale === 'ar' ? 'الهاتف' : 'phone' }}
                             </p>
                             <p class="text-secondParagraph text-lg ">
-                                <a href="https://wa.me/966502904556" target="_blank"
+                                <a href="https://wa.me/966502904556" target="_blank" :dir="locale === 'ar' ? 'ltr' : ''"
                                     class="cursor-pointer duration-200 ease-in-out text-paragraph">
                                     +966126675141
                                 </a>
@@ -175,7 +175,7 @@
                             locale === 'ar' ? 'الهاتف' : 'phone' }}
                     </p>
                     <p class="text-secondParagraph text-lg md:text-base">
-                        <a href="https://wa.me/966502904556" target="_blank"
+                        <a href="https://wa.me/966502904556" target="_blank" :dir="locale === 'ar' ? 'ltr' : ''"
                             class="cursor-pointer duration-200 ease-in-out text-paragraph">
                             +966126675141
                         </a>
